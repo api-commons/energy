@@ -12,11 +12,11 @@ generated. Every number below is a count of providers.
 <!-- commons:summary -->
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
-| meter | 17 | 12 | id 58% | meters 14, meter 2, servicepoints 1 |
+| meter | 15 | 11 | id 55% | meters 12, meter 2, servicepoints 1 |
 | meter_reading | 8 | 6 | end_at 50%, start_at 50%, unit 50% | intervals 4, readings 2, usage 1, consumption 1 |
 | utility_account | 5 | 4 | id 100%, created_at 75% | accounts 5, account 1 |
 
-Cohort: 95 providers with harvested OpenAPI, 27 crosswalks. Of the providers exposing a meter: 41% create, 94% list, 65% fetch, 35% update, 18% delete. Generated 2026-11-11 by build.py.
+Cohort: 95 providers with harvested OpenAPI, 25 crosswalks. Of the providers exposing a meter: 40% create, 93% list, 67% fetch, 40% update, 20% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The

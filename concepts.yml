@@ -48,9 +48,9 @@ shared_specs:
   au-cdr-energy: [aemo, aer, agl-energy, alinta-energy, cdr-energy, energy-queensland, energyaustralia,
                   origin-energy, powershop, red-energy, simply-energy]
 duplicates:
-  doe: eia
-  leapfrog-power: leap
-  neso: national-energy-system-operator
+  eia: [doe]
+  leap: [leapfrog-power]
+  national-energy-system-operator: [neso]
 
 findings:
   - >-

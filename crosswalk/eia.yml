@@ -9,4 +9,5 @@ concepts:
     properties: {}
     core_coverage: null
     evidence:
+    - openapi/_original/eia-open-data-api-openapi.yaml#GET /v2/electricity/state-electricity-profiles/meters
     - openapi/_original/eia-api-v2-openapi.yml#GET /v2/electricity/state-electricity-profiles/meters

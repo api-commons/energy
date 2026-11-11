@@ -7,10 +7,10 @@ concepts:
     path_segment:
     - meters
     properties:
+      number: serial_number
       status:
       - status
       - state
-      number: serial_number
       type: type
     core_coverage: 0.0
     evidence:

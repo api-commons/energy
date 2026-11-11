@@ -20,9 +20,12 @@ thresholds:
   min_providers: 3
 excluded: {}
 duplicates:
-  doe: eia
-  leapfrog-power: leap
-  neso: national-energy-system-operator
+  eia:
+  - doe
+  leap:
+  - leapfrog-power
+  national-energy-system-operator:
+  - neso
 shared_specs:
   au-cdr-energy:
   - aemo
@@ -39,182 +42,151 @@ shared_specs:
 concepts:
   meter:
     segments_seen:
-      meters: 14
+      meters: 12
       meter: 2
       servicepoints: 1
-    providers_exposing: 17
-    providers_with_readable_schema: 12
+    providers_exposing: 15
+    providers_with_readable_schema: 11
     operations:
     - operation: GET collection
-      providers: 16
-      share: 0.941
+      providers: 14
+      share: 0.933
       tier: core
     - operation: GET item
-      providers: 11
-      share: 0.647
+      providers: 10
+      share: 0.667
       tier: core
     - operation: POST collection
-      providers: 7
-      share: 0.412
+      providers: 6
+      share: 0.4
       tier: extended
     - operation: UPDATE item
       providers: 6
-      share: 0.353
+      share: 0.4
       tier: extended
     - operation: DELETE item
       providers: 3
-      share: 0.176
-      tier: long-tail
+      share: 0.2
+      tier: extended
     - operation: DELETE collection
       providers: 1
-      share: 0.059
+      share: 0.067
       tier: long-tail
     - operation: UPDATE collection
       providers: 1
-      share: 0.059
+      share: 0.067
       tier: long-tail
     properties:
     - name: id
       tier: core
-      providers: 7
-      share: 0.583
+      providers: 6
+      share: 0.545
       type: string
       spellings:
       - id
-      - meter_id
       - servicePointId
       - meterId
-    - name: status
-      tier: extended
-      providers: 5
-      share: 0.417
-      type: string
-      spellings:
-      - status
-      - state
-    - name: created_at
-      tier: extended
-      providers: 4
-      share: 0.333
-      type: string
-      spellings:
-      - created_at
-      - createdAt
-      - created
-    - name: meter_type
-      tier: extended
-      providers: 4
-      share: 0.333
-      type: string
-      spellings:
-      - meterType
-      - meter_type
+      - meter_id
     - name: number
       tier: extended
       providers: 4
-      share: 0.333
+      share: 0.364
       type: string
       spellings:
       - meterNumber
       - serial_number
       - serialNumber
       - meter_number
+    - name: status
+      tier: extended
+      providers: 4
+      share: 0.364
+      type: string
+      spellings:
+      - status
+      - state
     - name: address
       tier: extended
       providers: 3
-      share: 0.25
+      share: 0.273
       type: object
       spellings:
       - location
       - serviceAddress
       - service_address
-    - name: created_by
+    - name: created_at
       tier: extended
       providers: 3
-      share: 0.25
+      share: 0.273
       type: string
       spellings:
-      - created_by
-      - createdBy
+      - createdAt
+      - created_at
+      - created
+    - name: meter_type
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: string
+      spellings:
+      - meterType
+      - meter_type
     - name: name
       tier: extended
       providers: 3
-      share: 0.25
+      share: 0.273
       type: string
       spellings:
       - name
-    - name: site
-      tier: extended
-      providers: 3
-      share: 0.25
-      type: object
-      spellings:
-      - site
-    - name: status_detail
-      tier: extended
-      providers: 3
-      share: 0.25
-      type: object
-      spellings:
-      - status_detail
-      - statusDetail
     - name: type
       tier: extended
       providers: 3
-      share: 0.25
+      share: 0.273
       type: string
       spellings:
       - type
-    - name: updated_at
-      tier: extended
-      providers: 3
-      share: 0.25
-      type: string
-      spellings:
-      - updated_at
-      - modified
-    long_tail_count: 162
+    long_tail_count: 166
     long_tail_sample:
+    - created_by
+    - end_at
+    - fuel
+    - metadata
+    - model
+    - site
+    - start_at
+    - status_detail
+    - updated_at
+    - account_number
+    - accounts
+    - activation_date
+    - apartment_id
+    - area_id
     - assets_count
     - assets_created_count
     - assets_failed_count
     - assets_updated_count
+    - authorization_uid
+    - auto_activation_date
     - bill_customer_account_number
     - bill_service_agreement_number
+    - building_id
+    - bulb_type
+    - business_unit_ids
+    - business_units_intersection
+    - business_units_union
     - caiso
+    - category
+    - category_percentage
+    - communication_method
     - connection_references
-    - customer
-    - customer_classification
-    - customer_group
-    - customer_name
-    - customer_name_contains
-    - device
-    - electric_service_account_number
-    - end_at
-    - exclude_meter_programs
-    - file_name
-    - fuel
-    - historical_responsiveness
-    - include_meter_programs
-    - is_archived
-    - isone
-    - job_id
-    - load_serving_entity
-    - load_types
-    - metadata
-    - meter_id_contains
-    - missed_revenue
-    - model
-    - nomination_w
-    - number_of_events
-    - nyiso
-    - onboarding_token
-    - page_size
-    - page_token
-    - partner_reference
-    - partner_reference_contains
-    - program
-    - programs
+    - consumer_profile
+    - correlation_id
+    - correlation_ids
+    - created_at_timestamp
+    - credential_ids
+    - currency
+    - current_tariff
+    - custom_data
   meter_reading:
     segments_seen:
       intervals: 4

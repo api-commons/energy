@@ -16,7 +16,7 @@ paths:
       tags:
       - Meters
       x-commons-tier: core
-      x-commons-share: 0.941
+      x-commons-share: 0.933
       responses:
         '200':
           description: OK
@@ -41,7 +41,7 @@ paths:
       tags:
       - Meters
       x-commons-tier: extended
-      x-commons-share: 0.412
+      x-commons-share: 0.4
       responses:
         '200':
           description: OK
@@ -62,7 +62,7 @@ paths:
       tags:
       - Meters
       x-commons-tier: core
-      x-commons-share: 0.647
+      x-commons-share: 0.667
       responses:
         '200':
           description: OK
@@ -75,7 +75,7 @@ paths:
       tags:
       - Meters
       x-commons-tier: extended
-      x-commons-share: 0.353
+      x-commons-share: 0.4
       responses:
         '200':
           description: OK
@@ -87,6 +87,19 @@ paths:
         content:
           application/json:
             schema: *id001
+    delete:
+      operationId: deleteMeter
+      summary: Delete a meter
+      tags:
+      - Meters
+      x-commons-tier: extended
+      x-commons-share: 0.2
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
   /meter-readings:
     get:
       operationId: listMeterReadings

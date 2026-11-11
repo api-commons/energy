@@ -7,11 +7,10 @@ concepts:
     path_segment:
     - meters
     properties:
-      status: status
-      created_at: created
       number: meter_number
+      status: status
       address: service_address
-      updated_at: modified
+      created_at: created
     core_coverage: 0.0
     evidence:
     - openapi/_original/utilityapi-openapi.yml#GET /meters

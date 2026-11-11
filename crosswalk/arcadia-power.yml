@@ -10,13 +10,10 @@ concepts:
       id:
       - meterId
       - id
-      status: status
-      created_at: createdAt
       number: meterNumber
+      status: status
       address: serviceAddress
-      created_by: createdBy
-      site: site
-      status_detail: statusDetail
+      created_at: createdAt
     core_coverage: 1.0
     evidence:
     - openapi/_original/arcadia-power-openapi.json#DELETE /plug/sites/{siteId}/meters

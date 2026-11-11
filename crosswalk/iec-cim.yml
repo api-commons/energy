@@ -7,8 +7,8 @@ concepts:
     path_segment:
     - meters
     properties:
-      meter_type: meterType
       number: serialNumber
+      meter_type: meterType
       name: name
     core_coverage: 0.0
     evidence:

@@ -54,11 +54,6 @@ adopters:
   crosswalk: crosswalk/con-edison.yml
   concepts:
   - meter
-- provider: doe
-  apis_io: https://apis.io/providers/doe/
-  crosswalk: crosswalk/doe.yml
-  concepts:
-  - meter
 - provider: eia
   apis_io: https://apis.io/providers/eia/
   crosswalk: crosswalk/eia.yml
@@ -111,11 +106,6 @@ adopters:
 - provider: leap
   apis_io: https://apis.io/providers/leap/
   crosswalk: crosswalk/leap.yml
-  concepts:
-  - meter
-- provider: leapfrog-power
-  apis_io: https://apis.io/providers/leapfrog-power/
-  crosswalk: crosswalk/leapfrog-power.yml
   concepts:
   - meter
 - provider: measurabl
