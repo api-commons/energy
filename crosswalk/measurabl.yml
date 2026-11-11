@@ -1,0 +1,31 @@
+provider: measurabl
+apis_io: https://apis.io/providers/measurabl/
+context: energy
+generated: '2026-11-11'
+concepts:
+  meter:
+    path_segment:
+    - meters
+    properties:
+      id: id
+      meter_type: meterType
+      name: name
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/measurabl-core-openapi.json#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}
+    - openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters
+    - openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}
+    - openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/meters
+    - openapi/_original/measurabl-core-openapi.json#PATCH /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}
+  meter_reading:
+    path_segment:
+    - readings
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/measurabl-core-openapi.json#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/readings/{meter_reading_id}
+    - openapi/_original/measurabl-core-openapi.json#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/waste_meters/{waste_meter_id}/readings/{waste_meter_reading_id}
+    - openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/readings
+    - openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/readings/{meter_reading_id}
+    - openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/waste_meters/{waste_meter_id}/readings

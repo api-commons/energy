@@ -1,0 +1,238 @@
+openapi: 3.1.0
+info:
+  title: Energy and Utilities (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Energy and Utilities interface, distilled from the harvested OpenAPI of 95 providers
+    in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /meters:
+    get:
+      operationId: listMeters
+      summary: List meters
+      tags:
+      - Meters
+      x-commons-tier: core
+      x-commons-share: 0.941
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Meter'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createMeter
+      summary: Create a meter
+      tags:
+      - Meters
+      x-commons-tier: extended
+      x-commons-share: 0.412
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /meters/{meter_id}:
+    parameters:
+    - $ref: '#/components/parameters/meter_id'
+    get:
+      operationId: getMeter
+      summary: Get a meter
+      tags:
+      - Meters
+      x-commons-tier: core
+      x-commons-share: 0.647
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateMeter
+      summary: Update a meter
+      tags:
+      - Meters
+      x-commons-tier: extended
+      x-commons-share: 0.353
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /meter-readings:
+    get:
+      operationId: listMeterReadings
+      summary: List meter readings
+      tags:
+      - Meter Readings
+      x-commons-tier: core
+      x-commons-share: 0.875
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/MeterReading'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createMeterReading
+      summary: Create a meter reading
+      tags:
+      - Meter Readings
+      x-commons-tier: extended
+      x-commons-share: 0.375
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /utility-accounts:
+    get:
+      operationId: listUtilityAccounts
+      summary: List utility accounts
+      tags:
+      - Utility Accounts
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/UtilityAccount'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createUtilityAccount
+      summary: Create an utility account
+      tags:
+      - Utility Accounts
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /utility-accounts/{utility_account_id}:
+    parameters:
+    - $ref: '#/components/parameters/utility_account_id'
+    get:
+      operationId: getUtilityAccount
+      summary: Get an utility account
+      tags:
+      - Utility Accounts
+      x-commons-tier: core
+      x-commons-share: 0.8
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateUtilityAccount
+      summary: Update an utility account
+      tags:
+      - Utility Accounts
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+components:
+  schemas:
+    Meter:
+      $ref: ./schema/meter.json
+    MeterReading:
+      $ref: ./schema/meter_reading.json
+    UtilityAccount:
+      $ref: ./schema/utility_account.json
+  parameters:
+    meter_id:
+      name: meter_id
+      in: path
+      required: true
+      schema:
+        type: string
+    meter_reading_id:
+      name: meter_reading_id
+      in: path
+      required: true
+      schema:
+        type: string
+    utility_account_id:
+      name: utility_account_id
+      in: path
+      required: true
+      schema:
+        type: string

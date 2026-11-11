@@ -1,0 +1,17 @@
+provider: enphase
+apis_io: https://apis.io/providers/enphase/
+context: energy
+generated: '2026-11-11'
+concepts:
+  meter:
+    path_segment:
+    - meters
+    properties:
+      status:
+      - status
+      - state
+      number: serial_number
+      type: type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/enphase-commissioning-api-openapi.json#GET /api/v4/systems/{system_id}/meters/{serial_number}

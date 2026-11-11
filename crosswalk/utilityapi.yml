@@ -1,0 +1,28 @@
+provider: utilityapi
+apis_io: https://apis.io/providers/utilityapi/
+context: energy
+generated: '2026-11-11'
+concepts:
+  meter:
+    path_segment:
+    - meters
+    properties:
+      status: status
+      created_at: created
+      number: meter_number
+      address: service_address
+      updated_at: modified
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/utilityapi-openapi.yml#GET /meters
+    - openapi/_original/utilityapi-openapi.yml#GET /meters/{uid}
+    - openapi/_original/utilityapi-openapi.yml#PUT /meters/{uid}
+  meter_reading:
+    path_segment:
+    - intervals
+    properties:
+      end_at: end
+      start_at: start
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/utilityapi-openapi.yml#GET /intervals

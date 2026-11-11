@@ -1,0 +1,20 @@
+provider: energy-utilities
+apis_io: https://apis.io/providers/energy-utilities/
+context: energy
+generated: '2026-11-11'
+concepts:
+  meter:
+    path_segment:
+    - meters
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/energy-utilities-openapi.yml#GET /meters
+    - openapi/_original/energy-utilities-openapi.yml#POST /meters
+  meter_reading:
+    path_segment:
+    - intervals
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/energy-utilities-openapi.yml#GET /intervals

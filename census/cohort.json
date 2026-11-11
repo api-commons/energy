@@ -1,0 +1,767 @@
+[
+ {
+  "slug": "1komma5",
+  "specs": [
+   "openapi/_original/1komma5-offer-tool-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "aedifion",
+  "specs": [
+   "openapi/_original/aedifion-openapi.json",
+   "openapi/_original/aedifion-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aemo",
+  "specs": [
+   "openapi/_original/aemo-attributes-report-external-v1-openapi.yml",
+   "openapi/_original/aemo-b2bmessaging-async-v1-openapi.yml",
+   "openapi/_original/aemo-b2bmessaging-pull-v1-openapi.yml",
+   "openapi/_original/aemo-b2bmessaging-sync-v1-openapi.yml",
+   "openapi/_original/aemo-b2mmessaging-async-v1-openapi.yml",
+   "openapi/_original/aemo-b2mmessaging-pull-v1-openapi.yml",
+   "openapi/_original/aemo-b2mmessaging-sync-v1-openapi.yml",
+   "openapi/_original/aemo-balancing-reports-v2-1-openapi.yml",
+   "openapi/_original/aemo-balancing-reports-v2-2-openapi.yml",
+   "openapi/_original/aemo-balancing-reports-v2-3-openapi.yml",
+   "openapi/_original/aemo-balancing-reports-v2-4-openapi.yml",
+   "openapi/_original/aemo-balancing-reports-v2-5-openapi.yml",
+   "openapi/_original/aemo-balancing-reports-v2-openapi.yml",
+   "openapi/_original/aemo-balancing-submission-v2-openapi.yml",
+   "openapi/_original/aemo-bidding-v1-openapi.yml",
+   "openapi/_original/aemo-bilateral-stem-submission-v1-openapi.yml",
+   "openapi/_original/aemo-blindupdate-v1-openapi.yml",
+   "openapi/_original/aemo-capacity-v1-openapi.yml",
+   "openapi/_original/aemo-capacityAuction-v1-openapi.yml",
+   "openapi/_original/aemo-cdr-common-openapi.yml",
+   "openapi/_original/aemo-cdr-openapi.yml",
+   "openapi/_original/aemo-cds-common-api-openapi.yml",
+   "openapi/_original/aemo-cds-energy-api-openapi.yml",
+   "openapi/_original/aemo-der-business-registration-v1-openapi.yml",
+   "openapi/_original/aemo-der-consumer-registration-v1-openapi.yml",
+   "openapi/_original/aemo-der-register-installation-v2-openapi.yml",
+   "openapi/_original/aemo-der-register-nmi-v1-openapi.yml",
+   "openapi/_original/aemo-ee-simulation-status-update-v1-openapi.yml",
+   "openapi/_original/aemo-enablementinstruction-v1-openapi.yml",
+   "openapi/_original/aemo-gasbb-reporting-public-data-openapi.yml",
+   "openapi/_original/aemo-generatorRecall-v1-openapi.yml",
+   "openapi/_original/aemo-hubmsgmgt-v1-openapi.yml",
+   "openapi/_original/aemo-hubmsgmgt-v2-openapi.yml",
+   "openapi/_original/aemo-identityService-v2-openapi.yml",
+   "openapi/_original/aemo-lfas-reports-v2-openapi.yml",
+   "openapi/_original/aemo-lfas-submission-v2-openapi.yml",
+   "openapi/_original/aemo-market-reports-v2-openapi.yml",
+   "openapi/_original/aemo-meterexemption-external-v1-openapi.yml",
+   "openapi/_original/aemo-mtpasaoffers-v1-openapi.yml",
+   "openapi/_original/aemo-oauth-v1-openapi.yml",
+   "openapi/_original/aemo-oip-external-v1-openapi.yml",
+   "openapi/_original/aemo-opsforecasting-intermittentgen-v1-openapi.yml",
+   "openapi/_original/aemo-outage-management-external-v1-openapi.yml",
+   "openapi/_original/aemo-p2pmessaging-sync-v1-openapi.yml",
+   "openapi/_original/aemo-pre-balancing-reports-v6-openapi.yml",
+   "openapi/_original/aemo-pre-balancing-reports-v7-1-openapi.yml",
+   "openapi/_original/aemo-pre-balancing-reports-v7-openapi.yml",
+   "openapi/_original/aemo-pre-balancing-reports-v8-openapi.yml",
+   "openapi/_original/aemo-prudentials-v1-openapi.yml",
+   "openapi/_original/aemo-rcm-ops-external-v1-openapi.yml",
+   "openapi/_original/aemo-reallocations-v1-openapi.yml",
+   "openapi/_original/aemo-report-v1-openapi.yml",
+   "openapi/_original/aemo-rtms-external-v1-openapi.yml",
+   "openapi/_original/aemo-selfForecast-v1-openapi.yml",
+   "openapi/_original/aemo-settlementDirect-v1-openapi.yml",
+   "openapi/_original/aemo-submission-v1-openapi.yml",
+   "openapi/_original/aemo-system-management-reports-v2-1-openapi.yml",
+   "openapi/_original/aemo-system-management-reports-v2-2-openapi.yml",
+   "openapi/_original/aemo-system-management-reports-v2-3-openapi.yml",
+   "openapi/_original/aemo-system-management-reports-v2-4-openapi.yml",
+   "openapi/_original/aemo-system-management-reports-v2-5-openapi.yml",
+   "openapi/_original/aemo-system-management-reports-v2-6-openapi.yml",
+   "openapi/_original/aemo-system-management-reports-v2-openapi.yml",
+   "openapi/_original/aemo-tls-certificate-mgmt-v1-openapi.yml",
+   "openapi/_original/aemo-variableparameter-v1-openapi.yml",
+   "openapi/_original/aemo-wemde-dispatchcase-external-v1-openapi.yml",
+   "openapi/_original/aemo-wemde-dispatchcase-external-v2-openapi.yml",
+   "openapi/_original/aemo-wemde-dispatchinstruction-external-v1-openapi.yml",
+   "openapi/_original/aemo-wemde-dispatchsolution-external-v1-openapi.yml",
+   "openapi/_original/aemo-wemde-dispatchsolution-external-v2-openapi.yml",
+   "openapi/_original/aemo-wemde-dispatchsummary-external-v1-openapi.yml",
+   "openapi/_original/aemo-wemde-dspdispatchinstruction-external-v1-openapi.yml",
+   "openapi/_original/aemo-wemde-ncess-external-v1-openapi.yml",
+   "openapi/_original/aemo-wemde-notinservicecapacity-external-v1-openapi.yml",
+   "openapi/_original/aemo-wemde-referencetradingprice-external-v1-openapi.yml",
+   "openapi/_original/aemo-wemde-tradingdayreport-external-v1-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aer",
+  "specs": [
+   "openapi/_original/cdr-energy-api-openapi.json",
+   "openapi/_original/cds-common-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "aeso",
+  "specs": [
+   "openapi/_original/aeso-actualforecast-api-v1-openapi.json",
+   "openapi/_original/aeso-aiesgencapacity-api-v1-openapi.json",
+   "openapi/_original/aeso-assetlist-api-v1-openapi.json",
+   "openapi/_original/aeso-currentsupplydemand-api-v1-openapi.json",
+   "openapi/_original/aeso-currentsupplydemand-api-v2-openapi.json",
+   "openapi/_original/aeso-energymeritorder-api-v1-openapi.json",
+   "openapi/_original/aeso-itc-api-v1-openapi.json",
+   "openapi/_original/aeso-loadoutageforecast-api-v1-openapi.json",
+   "openapi/_original/aeso-meteredvolume-api-v1-openapi.json",
+   "openapi/_original/aeso-operatingreserveoffercontrol-api-v1-openapi.json",
+   "openapi/_original/aeso-poolparticipant-api-v1-openapi.json",
+   "openapi/_original/aeso-poolprice-api-v1-1-openapi.json",
+   "openapi/_original/aeso-systemmarginalprice-api-v1-1-openapi.json",
+   "openapi/_original/aeso-unitcommitmentdata-api-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "agl-energy",
+  "specs": [
+   "openapi/_original/agl-energy-cds-common-openapi.json",
+   "openapi/_original/agl-energy-cds-energy-openapi.json"
+  ]
+ },
+ {
+  "slug": "alectra-utilities",
+  "specs": [
+   "openapi/_original/alectra-utilities-green-button-espi-openapi.json"
+  ]
+ },
+ {
+  "slug": "alinta-energy",
+  "specs": [
+   "openapi/_original/alinta-energy-cds-common-api-openapi.yml",
+   "openapi/_original/alinta-energy-cds-energy-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amber-electric",
+  "specs": [
+   "openapi/_original/amber-electric-public-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "arcadia",
+  "specs": [
+   "openapi/_original/arcadia-plug-openapi.yml"
+  ]
+ },
+ {
+  "slug": "arcadia-power",
+  "specs": [
+   "openapi/_original/arcadia-power-openapi.json"
+  ]
+ },
+ {
+  "slug": "awattar",
+  "specs": [
+   "openapi/_original/awattar-market-data-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bayou-energy",
+  "specs": [
+   "openapi/_original/bayou-energy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "brick",
+  "specs": [
+   "openapi/_original/brick-brick-server-openapi.json",
+   "openapi/_original/brick-brick-server-openapi.yml"
+  ]
+ },
+ {
+  "slug": "carbon-intensity",
+  "specs": [
+   "openapi/_original/carbon-intensity-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cdr-energy",
+  "specs": [
+   "openapi/_original/cdr-admin-openapi.json",
+   "openapi/_original/cdr-common-openapi.json",
+   "openapi/_original/cdr-dcr-openapi.json",
+   "openapi/_original/cdr-energy-openapi.json",
+   "openapi/_original/cdr-energy-sdh-openapi.json",
+   "openapi/_original/cdr-register-openapi.json"
+  ]
+ },
+ {
+  "slug": "centrica",
+  "specs": [
+   "openapi/_original/centrica-fieldops-identity-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "chargefox",
+  "specs": [
+   "openapi/_original/chargefox-fleets-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "clevergy",
+  "specs": [
+   "openapi/_original/clevergy-connect-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cms-energy",
+  "specs": [
+   "openapi/_original/cms-energy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "con-edison",
+  "specs": [
+   "openapi/_original/con-edison-green-button-connect-my-data-swagger.json"
+  ]
+ },
+ {
+  "slug": "constellation-energy",
+  "specs": [
+   "openapi/_original/constellation-energy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dcc-smart",
+  "specs": [
+   "openapi/_original/dcc-boxed-duis-signing-tool-openapi.yml"
+  ]
+ },
+ {
+  "slug": "doe",
+  "specs": [
+   "openapi/_original/department-of-energy-co2-emissions-api-openapi.yml",
+   "openapi/_original/department-of-energy-eia-open-data-api-v2-api-openapi.yml",
+   "openapi/_original/department-of-energy-electricity-api-openapi.yml",
+   "openapi/_original/department-of-energy-international-api-openapi.yml",
+   "openapi/_original/department-of-energy-natural-gas-api-openapi.yml",
+   "openapi/_original/department-of-energy-nuclear-outages-api-openapi.yml",
+   "openapi/_original/department-of-energy-petroleum-api-openapi.yml",
+   "openapi/_original/department-of-energy-seriesid-api-openapi.yml",
+   "openapi/_original/department-of-energy-total-energy-api-openapi.yml",
+   "openapi/_original/eia-open-data-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "edf-energy",
+  "specs": [
+   "openapi/_original/edf-energy-kraken-data-import-openapi.yml",
+   "openapi/_original/edf-energy-kraken-openapi.yml"
+  ]
+ },
+ {
+  "slug": "eia",
+  "specs": [
+   "openapi/_original/eia-api-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "electricity-north-west",
+  "specs": [
+   "openapi/_original/electricity-north-west-explore-api-v2-0-openapi.json",
+   "openapi/_original/electricity-north-west-explore-api-v2-1-openapi.json"
+  ]
+ },
+ {
+  "slug": "electricitymaps",
+  "specs": [
+   "openapi/_original/electricitymaps-openapi.yml"
+  ]
+ },
+ {
+  "slug": "elexon",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "elhub",
+  "specs": [
+   "openapi/_original/elhub-access-api-openapi.yaml",
+   "openapi/_original/elhub-data-export-api-openapi.yaml",
+   "openapi/_original/elhub-energy-data-api-openapi.yaml",
+   "openapi/_original/elhub-flex-information-system-auth-api-openapi.json",
+   "openapi/_original/elhub-flex-information-system-grid-api-openapi.json",
+   "openapi/_original/elhub-flex-information-system-main-api-openapi.json",
+   "openapi/_original/elhub-market-data-contracts-api-openapi.yaml",
+   "openapi/_original/elhub-openapi-api-base-openapi.yml",
+   "openapi/_original/elhub-openapi-api-no-default-openapi.json",
+   "openapi/_original/elhub-openapi-auth-openapi.yml",
+   "openapi/_original/elhub-openapi-grid-base-openapi.yml",
+   "openapi/_original/elhub-openapi-openapi.json",
+   "openapi/_original/elhub-openapi-openapi.yml",
+   "openapi/_original/elhub-postgrest-openapi-3-0-openapi.json",
+   "openapi/_original/elhub-postgrest-swagger-2-0-openapi.json",
+   "openapi/_original/elhub-settlement-virtual-calculations-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "eliq",
+  "specs": [
+   "openapi/_original/eliq-auth-api-openapi.yaml",
+   "openapi/_original/eliq-data-management-api-openapi.json",
+   "openapi/_original/eliq-insights-api-openapi.yaml",
+   "openapi/_original/eliq-intelligence-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "endeavour-energy",
+  "specs": [
+   "openapi/_original/endeavour-energy-open-data-explore-api-v2-0-openapi.json",
+   "openapi/_original/endeavour-energy-open-data-explore-api-v2-1-openapi.json"
+  ]
+ },
+ {
+  "slug": "energy-charts-api",
+  "specs": [
+   "openapi/_original/energy-charts-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "energy-queensland",
+  "specs": [
+   "openapi/_original/energy-queensland-cds-common-openapi.yml",
+   "openapi/_original/energy-queensland-cds-energy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "energy-utilities",
+  "specs": [
+   "openapi/_original/energy-utilities-openapi.yml"
+  ]
+ },
+ {
+  "slug": "energyaustralia",
+  "specs": [
+   "openapi/_original/energyaustralia-cds-common-api-openapi.yml",
+   "openapi/_original/energyaustralia-cds-energy-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "enphase",
+  "specs": [
+   "openapi/_original/enphase-commissioning-api-openapi.json",
+   "openapi/_original/enphase-monitoring-api-openapi.json",
+   "openapi/_original/enphase-vpp-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "entergy",
+  "specs": [
+   "openapi/_original/entergy-wordpress-rest-index.json"
+  ]
+ },
+ {
+  "slug": "entso-e",
+  "specs": [
+   "openapi/_original/entso-e-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ercot",
+  "specs": [
+   "openapi/_original/ercot-public-data-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "ev-energy",
+  "specs": [
+   "openapi/_original/ev-energy-api-v2-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "ferc",
+  "specs": [
+   "openapi/_original/ferc-data-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "genability",
+  "specs": [
+   "openapi/_original/genability-signal-openapi.json"
+  ]
+ },
+ {
+  "slug": "green-button-alliance",
+  "specs": [
+   "openapi/_original/green-button-alliance-application-information-openapi.yml",
+   "openapi/_original/green-button-alliance-authorization-server-openapi.yml",
+   "openapi/_original/green-button-alliance-green-button-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gridstatus",
+  "specs": [
+   "openapi/_original/gridstatus-openapi.json"
+  ]
+ },
+ {
+  "slug": "gridx",
+  "specs": [
+   "openapi/_original/gridx-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gridx-ai",
+  "specs": [
+   "openapi/_original/gridx-ai-openapi.yml",
+   "openapi/_original/gridx-api.json"
+  ]
+ },
+ {
+  "slug": "hildebrand",
+  "specs": [
+   "openapi/_original/hildebrand-glowmarkt-device-management-system-swagger.json",
+   "openapi/_original/hildebrand-glowmarkt-notification-system-swagger.json",
+   "openapi/_original/hildebrand-glowmarkt-resource-system-swagger.json",
+   "openapi/_original/hildebrand-glowmarkt-user-system-swagger.json",
+   "openapi/_original/hildebrand-glowmarkt-virtual-entity-system-swagger.json"
+  ]
+ },
+ {
+  "slug": "hydro-ottawa",
+  "specs": [
+   "openapi/_original/hydro-ottawa-green-button-espi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hydro-quebec",
+  "specs": [
+   "openapi/_original/hydro-quebec-open-data-explore-api-v2-0-openapi.json",
+   "openapi/_original/hydro-quebec-open-data-explore-api-v2-1-openapi.json"
+  ]
+ },
+ {
+  "slug": "iec-cim",
+  "specs": [
+   "openapi/_original/iec-cim-61968-distribution-openapi.yml"
+  ]
+ },
+ {
+  "slug": "itron",
+  "specs": [
+   "openapi/_original/starfish-data-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "leap",
+  "specs": [
+   "openapi/_original/leap-create-meters-openapi-original.yml",
+   "openapi/_original/leap-dispatching-openapi-original.yml",
+   "openapi/_original/leap-enrollments-openapi-original.yml",
+   "openapi/_original/leap-meters-openapi-original.yml",
+   "openapi/_original/leap-nominations-openapi-original.yml",
+   "openapi/_original/leap-settlement-openapi-original.yml",
+   "openapi/_original/leap-webhooks-openapi-original.yml",
+   "openapi/_original/leapfrog-power-group-dispatches-api-openapi.yml",
+   "openapi/_original/leapfrog-power-interval-data-upload-api-openapi.yml",
+   "openapi/_original/leapfrog-power-meter-dispatches-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "leapfrog-power",
+  "specs": [
+   "openapi/_original/leapfrog-power-create-meters-openapi.yml",
+   "openapi/_original/leapfrog-power-dispatch-openapi.yml",
+   "openapi/_original/leapfrog-power-interval-data-upload-openapi.json",
+   "openapi/_original/leapfrog-power-meter-details-openapi.yml",
+   "openapi/_original/leapfrog-power-meter-enrollment-openapi.yml",
+   "openapi/_original/leapfrog-power-nominations-openapi.yml",
+   "openapi/_original/leapfrog-power-revenue-analytics-openapi.yml",
+   "openapi/_original/leapfrog-power-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lunar-energy",
+  "specs": [
+   "openapi/_original/gridshare-customer-api-openapi.yml",
+   "openapi/_original/gridshare-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "measurabl",
+  "specs": [
+   "openapi/_original/measurabl-core-openapi.json",
+   "openapi/_original/measurabl-core-openapi.yml",
+   "openapi/_original/measurabl-esgx-buildings-openapi.json",
+   "openapi/_original/measurabl-esgx-buildings-openapi.yml",
+   "openapi/_original/measurabl-esgx-securities-compliance-files-openapi.json",
+   "openapi/_original/measurabl-esgx-securities-compliance-files-openapi.yml",
+   "openapi/_original/measurabl-esgx-securities-openapi.json",
+   "openapi/_original/measurabl-esgx-securities-openapi.yml",
+   "openapi/_original/measurabl-partners-openapi.json",
+   "openapi/_original/measurabl-partners-openapi.yml"
+  ]
+ },
+ {
+  "slug": "miso",
+  "specs": [
+   "openapi/_original/miso-data-exchange-load-generation-interchange-api-openapi.json",
+   "openapi/_original/miso-data-exchange-pricing-api-openapi.json",
+   "openapi/_original/miso-mui-2.0-specification.yaml",
+   "openapi/_original/miso-mui-20-api-openapi.yaml",
+   "openapi/_original/miso-public-api-openapi.json",
+   "openapi/_original/miso-weather-information-interface-api-openapi.yml",
+   "openapi/_original/miso-weather-information-interface-openapi.yml"
+  ]
+ },
+ {
+  "slug": "modo-energy",
+  "specs": [
+   "openapi/_original/modo-energy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "n3rgy",
+  "specs": [
+   "openapi/_original/n3rgy-customer-service-api-v2-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "national-energy-system-operator",
+  "specs": [
+   "openapi/_original/national-energy-system-operator-openapi.json"
+  ]
+ },
+ {
+  "slug": "near-space-labs",
+  "specs": [
+   "openapi/_original/near-space-labs-oauth-service.json",
+   "openapi/_original/near-space-labs-oauth-service_2.json",
+   "openapi/_original/near-space-labs-tile-service.json",
+   "openapi/_original/near-space-labs-tile-service_2.json"
+  ]
+ },
+ {
+  "slug": "neso",
+  "specs": [
+   "openapi/_original/neso-data-portal-openapi.json"
+  ]
+ },
+ {
+  "slug": "nomos",
+  "specs": [
+   "openapi/_original/nomos-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "nordpool",
+  "specs": [
+   "openapi/_original/nordpool-data-portal-openapi.yml",
+   "openapi/_original/nordpool-market-data-openapi.yml"
+  ]
+ },
+ {
+  "slug": "northern-powergrid",
+  "specs": [
+   "openapi/_original/northern-powergrid-open-data-explore-api-v2-0-openapi.json",
+   "openapi/_original/northern-powergrid-open-data-explore-api-v2-1-openapi.json"
+  ]
+ },
+ {
+  "slug": "octopus-energy",
+  "specs": [
+   "openapi/_original/octopus-energy-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ontario-energy-board",
+  "specs": [
+   "openapi/_original/ontario-energy-board-rds-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openadr-alliance",
+  "specs": [
+   "openapi/_original/openadr-3-0-0-openapi.yaml",
+   "openapi/_original/openadr-3-0-1-openapi.yaml",
+   "openapi/_original/openadr-3-1-0-openapi.yaml",
+   "openapi/_original/openadr-3-1-1-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "origin-energy",
+  "specs": [
+   "openapi/_original/consumer-data-standards-common-api-openapi.json",
+   "openapi/_original/consumer-data-standards-energy-api-openapi.json",
+   "openapi/_original/origin-energy-kraken-data-import-openapi.yml",
+   "openapi/_original/origin-energy-kraken-default-openapi.yml",
+   "openapi/_original/origin-energy-kraken-orders-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ostrom",
+  "specs": [
+   "openapi/_original/ostrom-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "pg-and-e",
+  "specs": [
+   "openapi/_original/pg-and-e-share-my-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pge",
+  "specs": [
+   "openapi/_original/green-button-alliance-espi-openapi.json",
+   "openapi/_original/pg-and-e-subscriptions-api-openapi.yml",
+   "openapi/_original/pg-and-e-usage-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "powershop",
+  "specs": [
+   "openapi/_original/powershop-cdr-common-api-openapi.json",
+   "openapi/_original/powershop-cdr-energy-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "red-energy",
+  "specs": [
+   "openapi/_original/red-energy-cds-common-openapi.yml",
+   "openapi/_original/red-energy-cds-energy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reposit-power",
+  "specs": [
+   "openapi/_original/reposit-power-customer-api-openapi.yml",
+   "openapi/_original/reposit-power-market-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scottishpower",
+  "specs": [
+   "openapi/_original/scottishpower-spen-open-data-explore-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "sense",
+  "specs": [
+   "openapi/_original/sense-sense-client-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "simply-energy",
+  "specs": [
+   "openapi/_original/simply-energy-cds-common-openapi.yml",
+   "openapi/_original/simply-energy-cds-energy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spp",
+  "specs": [
+   "openapi/_original/trolie-standard-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ssen",
+  "specs": [
+   "openapi/_original/ssen-transmission-opendatasoft-explore-v2.1-openapi.json"
+  ]
+ },
+ {
+  "slug": "teco-energy",
+  "specs": [
+   "openapi/_original/teco-energy-account-openapi.yml",
+   "openapi/_original/teco-energy-outage-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thermal-power",
+  "specs": [
+   "openapi/_original/thermal-power-openapi.yml"
+  ]
+ },
+ {
+  "slug": "toronto-hydro",
+  "specs": [
+   "openapi/_original/toronto-hydro-green-button-espi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ubicquia",
+  "specs": [
+   "openapi/_original/ubicquia-config-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "uk-power-networks",
+  "specs": [
+   "openapi/_original/uk-power-networks-explore-api-v2-0-openapi.json",
+   "openapi/_original/uk-power-networks-explore-api-v2-1-openapi.json"
+  ]
+ },
+ {
+  "slug": "university-of-sheffield",
+  "specs": [
+   "openapi/_original/university-of-sheffield-sheffield-solar-openapi.json"
+  ]
+ },
+ {
+  "slug": "urjanet",
+  "specs": [
+   "openapi/_original/urjanet-openapi.yml"
+  ]
+ },
+ {
+  "slug": "utilityapi",
+  "specs": [
+   "openapi/_original/utilityapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "verdigris-technologies",
+  "specs": [
+   "openapi/_original/verdigris-technologies-data-v4-openapi.json"
+  ]
+ },
+ {
+  "slug": "viridi-parente",
+  "specs": [
+   "openapi/_original/viridi-parente-vista-openapi.json",
+   "openapi/_original/viridi-parente-vista-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "virtual-peaker",
+  "specs": [
+   "openapi/_original/virtual-peaker-gravity-connect-device-partner-api-openapi.yml",
+   "openapi/_original/virtual-peaker-gravity-connect-vpp-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "voltair",
+  "specs": [
+   "openapi/_original/voltair-api-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "wattwatchers",
+  "specs": [
+   "openapi/_original/wattwatchers-rest-api-v3-openapi.json"
+  ]
+ },
+ {
+  "slug": "wegowise",
+  "specs": [
+   "openapi/_original/wegowise-openapi.yml"
+  ]
+ },
+ {
+  "slug": "xylem",
+  "specs": [
+   "openapi/_original/xylem-apis-dev-swagger.json",
+   "openapi/_original/xylem-apis-manager-openapi.yml"
+  ]
+ }
+]

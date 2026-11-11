@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/energy/main/schema/meter_reading.json",
+  "title": "Meter Reading",
+  "description": "The common meter_reading in Energy and Utilities, distilled from 6 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "end_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "endAt",
+        "to",
+        "end"
+      ],
+      "format": "date-time"
+    },
+    "start_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "startAt",
+        "from",
+        "start"
+      ],
+      "format": "date-time"
+    },
+    "unit": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "unit",
+        "unitOfMeasure"
+      ]
+    }
+  },
+  "required": [],
+  "x-commons": {
+    "context": "energy",
+    "concept": "meter_reading",
+    "providers": 6,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

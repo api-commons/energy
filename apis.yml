@@ -1,0 +1,51 @@
+aid: common-energy
+name: Energy and Utilities
+type: Common
+description: 'The common Energy and Utilities vocabulary, distilled from the harvested OpenAPI of 95 providers in
+  APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names
+  to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Utilities
+- Electricity
+- Smart Metering
+- Utility Data
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/energy/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-energy:energy
+  name: Common Energy and Utilities Interface
+  description: The Energy and Utilities interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/energy
+  tags:
+  - Utilities
+  - Electricity
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/energy/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/energy/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/energy/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: meter
+    url: https://raw.githubusercontent.com/api-commons/energy/main/schema/meter.json
+  - type: JSONSchema
+    name: meter_reading
+    url: https://raw.githubusercontent.com/api-commons/energy/main/schema/meter_reading.json
+  - type: JSONSchema
+    name: utility_account
+    url: https://raw.githubusercontent.com/api-commons/energy/main/schema/utility_account.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/energy/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

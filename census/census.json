@@ -1,0 +1,3044 @@
+{
+ "cohort_size": 95,
+ "unreadable": [],
+ "concepts": {
+  "meter": {
+   "aemo": {
+    "segments": [
+     "servicepoints"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "nationalMeteringId": "string",
+     "servicePointClassification": "string",
+     "servicePointStatus": "string",
+     "jurisdictionCode": "string",
+     "isGenerator": "boolean",
+     "validFromDate": "string",
+     "lastUpdateDateTime": "string",
+     "lastConsumerChangeDate": "string",
+     "consumerProfile": "object",
+     "distributionLossFactor": "object",
+     "relatedParticipants": "array",
+     "location": null,
+     "meters": "array"
+    },
+    "evidence": [
+     "openapi/_original/aemo-cdr-openapi.yml#GET /electricity/servicepoints/{servicePointId}",
+     "openapi/_original/aemo-cdr-openapi.yml#POST /electricity/servicepoints",
+     "openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints",
+     "openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}"
+    ]
+   },
+   "aer": {
+    "segments": [
+     "servicepoints"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "nationalMeteringId": "string",
+     "servicePointClassification": "string",
+     "servicePointStatus": "string",
+     "jurisdictionCode": "string",
+     "isGenerator": "boolean",
+     "validFromDate": "string",
+     "lastUpdateDateTime": "string",
+     "lastConsumerChangeDate": "string",
+     "consumerProfile": "object",
+     "distributionLossFactor": "object",
+     "relatedParticipants": "array",
+     "location": null,
+     "meters": "array"
+    },
+    "evidence": [
+     "openapi/_original/cdr-energy-api-openapi.json#GET /energy/electricity/servicepoints",
+     "openapi/_original/cdr-energy-api-openapi.json#GET /energy/electricity/servicepoints/{servicePointId}"
+    ]
+   },
+   "agl-energy": {
+    "segments": [
+     "servicepoints"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "nationalMeteringId": "string",
+     "servicePointClassification": "string",
+     "servicePointStatus": "string",
+     "jurisdictionCode": "string",
+     "isGenerator": "boolean",
+     "validFromDate": "string",
+     "lastUpdateDateTime": "string",
+     "lastConsumerChangeDate": "string",
+     "consumerProfile": "object",
+     "distributionLossFactor": "object",
+     "relatedParticipants": "array",
+     "location": null,
+     "meters": "array"
+    },
+    "evidence": [
+     "openapi/_original/agl-energy-cds-energy-openapi.json#GET /energy/electricity/servicepoints",
+     "openapi/_original/agl-energy-cds-energy-openapi.json#GET /energy/electricity/servicepoints/{servicePointId}"
+    ]
+   },
+   "alinta-energy": {
+    "segments": [
+     "servicepoints"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "nationalMeteringId": "string",
+     "servicePointClassification": "string",
+     "servicePointStatus": "string",
+     "jurisdictionCode": "string",
+     "isGenerator": "boolean",
+     "validFromDate": "string",
+     "lastUpdateDateTime": "string",
+     "lastConsumerChangeDate": "string",
+     "consumerProfile": "object",
+     "distributionLossFactor": "object",
+     "relatedParticipants": "array",
+     "location": null,
+     "meters": "array"
+    },
+    "evidence": [
+     "openapi/_original/alinta-energy-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints",
+     "openapi/_original/alinta-energy-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}"
+    ]
+   },
+   "arcadia-power": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "correlationIds": "array",
+     "credentialIds": "array",
+     "earliestIntervalAt": "string",
+     "electricMeterMultiplier": "number",
+     "intervalsCreatedAt": "string",
+     "intervalsUpdatedAt": "string",
+     "isIntervalsDormant": "boolean",
+     "latestIntervalAt": "string",
+     "localTimezone": "string",
+     "meterId": "string",
+     "meterNumber": "string",
+     "providerId": "string",
+     "providerName": "string",
+     "readType": "string",
+     "readings": "array",
+     "serviceType": "string",
+     "accounts": "array",
+     "bulbType": "string",
+     "businessUnitsIntersection": "array",
+     "businessUnitsUnion": "array",
+     "createdAt": "string",
+     "createdBy": "string",
+     "currentTariff": "object",
+     "customData": "object",
+     "generalDescriptionAsPrinted": "string",
+     "id": "string",
+     "isIntervalsProductActive": "boolean",
+     "isIntervalsThirdPartyPortalMeter": "boolean",
+     "isLocationRecommendationIgnored": "boolean",
+     "isStandalone": "boolean",
+     "lastModifiedAt": "string",
+     "lastModifiedBy": "string",
+     "latestIntervalsCheckedAt": "string",
+     "latestStatementDate": "string",
+     "meterConstantMultiplier": "number",
+     "nextExpectedPostDate": "string",
+     "normalizedMeterNumber": "string",
+     "normalizedPointOfDeliveryNumber": "string",
+     "pipeType": "string",
+     "pointOfDeliveryNumber": "string",
+     "previousMeterConstantMultiplier": "number",
+     "previousMeterNumber": "string",
+     "provider": "object",
+     "serviceAddress": "object",
+     "serviceTypeClassification": "string",
+     "site": "object",
+     "status": "string",
+     "statusDetail": "string",
+     "voidedAt": "string",
+     "businessUnitIds": "array",
+     "correlationId": "string",
+     "electricServiceIdentifier": "string",
+     "retailCustomerEmail": "string",
+     "endAt": "string",
+     "intervalDurationMinutes": "integer",
+     "sourceIntervalDurationMinutes": "array",
+     "startAt": "string",
+     "meterIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/arcadia-power-openapi.json#DELETE /plug/sites/{siteId}/meters",
+     "openapi/_original/arcadia-power-openapi.json#GET /plug/intervals/meters/{meterId}",
+     "openapi/_original/arcadia-power-openapi.json#GET /plug/meters",
+     "openapi/_original/arcadia-power-openapi.json#GET /plug/meters/{meterId}",
+     "openapi/_original/arcadia-power-openapi.json#GET /plug/normalizedIntervals/meters/{meterId}",
+     "openapi/_original/arcadia-power-openapi.json#PATCH /plug/meters/{meterId}",
+     "openapi/_original/arcadia-power-openapi.json#PATCH /plug/sites/{siteId}/meters",
+     "openapi/_original/arcadia-power-openapi.json#POST /plug/meters",
+     "openapi/_original/arcadia-power-openapi.json#PUT /plug/meters/{meterId}"
+    ]
+   },
+   "cdr-energy": {
+    "segments": [
+     "servicepoints"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "nationalMeteringId": "string",
+     "servicePointClassification": "string",
+     "servicePointStatus": "string",
+     "jurisdictionCode": "string",
+     "isGenerator": "boolean",
+     "validFromDate": "string",
+     "lastUpdateDateTime": "string",
+     "lastConsumerChangeDate": "string",
+     "consumerProfile": "object",
+     "distributionLossFactor": "object",
+     "relatedParticipants": "array",
+     "location": null,
+     "meters": "array",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/cdr-energy-openapi.json#GET /energy/electricity/servicepoints",
+     "openapi/_original/cdr-energy-openapi.json#GET /energy/electricity/servicepoints/{servicePointId}",
+     "openapi/_original/cdr-energy-sdh-openapi.json#GET /secondary/energy/electricity/servicepoints/{servicePointId}",
+     "openapi/_original/cdr-energy-sdh-openapi.json#POST /secondary/energy/electricity/servicepoints"
+    ]
+   },
+   "cms-energy": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/cms-energy-openapi.yml#GET /meters",
+     "openapi/_original/cms-energy-openapi.yml#GET /meters/{id}"
+    ]
+   },
+   "con-edison": {
+    "segments": [
+     "meter"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/con-edison-green-button-connect-my-data-swagger.json#GET /resource/Customer/{subscriptionId}/CustomerAccount/{accountId}/CustomerAgreement/{customerAgreementId}/ServiceLocation/{serviceLocationId}/Meter",
+     "openapi/_original/con-edison-green-button-connect-my-data-swagger.json#GET /resource/Customer/{subscriptionId}/CustomerAccount/{accountId}/CustomerAgreement/{customerAgreementId}/ServiceLocation/{serviceLocationId}/Meter/{serialNumber}"
+    ]
+   },
+   "doe": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/eia-open-data-api-openapi.yaml#GET /v2/electricity/state-electricity-profiles/meters"
+    ]
+   },
+   "eia": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/eia-api-v2-openapi.yml#GET /v2/electricity/state-electricity-profiles/meters"
+    ]
+   },
+   "eliq": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "eliq_id": "string",
+     "location_id": "string",
+     "name": "string",
+     "model": "string",
+     "fuel": "string",
+     "type": "string",
+     "is_sub_meter": "boolean",
+     "category": "string",
+     "category_percentage": "integer",
+     "supply_start_date": "string",
+     "supply_end_date": "string",
+     "created_at_timestamp": "string",
+     "sync_status": "string"
+    },
+    "evidence": [
+     "openapi/_original/eliq-data-management-api-openapi.json#DELETE /meters/{id}",
+     "openapi/_original/eliq-data-management-api-openapi.json#GET /locations/{id}/meters",
+     "openapi/_original/eliq-data-management-api-openapi.json#GET /meters",
+     "openapi/_original/eliq-data-management-api-openapi.json#GET /meters/{id}",
+     "openapi/_original/eliq-data-management-api-openapi.json#PUT /meters/{id}"
+    ]
+   },
+   "energy-queensland": {
+    "segments": [
+     "servicepoints"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "consumerProfile": "object",
+     "isGenerator": "boolean",
+     "jurisdictionCode": "string",
+     "lastConsumerChangeDate": "string",
+     "lastUpdateDateTime": "string",
+     "nationalMeteringId": "string",
+     "servicePointClassification": "string",
+     "servicePointId": null,
+     "servicePointStatus": "string",
+     "validFromDate": "string",
+     "distributionLossFactor": "object",
+     "location": null,
+     "meters": "array",
+     "relatedParticipants": "array"
+    },
+    "evidence": [
+     "openapi/_original/energy-queensland-cds-energy-openapi.yml#GET /energy/electricity/servicepoints",
+     "openapi/_original/energy-queensland-cds-energy-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}"
+    ]
+   },
+   "energy-utilities": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "meters": "array"
+    },
+    "evidence": [
+     "openapi/_original/energy-utilities-openapi.yml#GET /meters",
+     "openapi/_original/energy-utilities-openapi.yml#POST /meters"
+    ]
+   },
+   "energyaustralia": {
+    "segments": [
+     "servicepoints"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "nationalMeteringId": "string",
+     "servicePointClassification": "string",
+     "servicePointStatus": "string",
+     "jurisdictionCode": "string",
+     "isGenerator": "boolean",
+     "validFromDate": "string",
+     "lastUpdateDateTime": "string",
+     "lastConsumerChangeDate": "string",
+     "consumerProfile": "object",
+     "distributionLossFactor": "object",
+     "relatedParticipants": "array",
+     "location": null,
+     "meters": "array"
+    },
+    "evidence": [
+     "openapi/_original/energyaustralia-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints",
+     "openapi/_original/energyaustralia-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}"
+    ]
+   },
+   "enphase": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "serial_number": "string",
+     "manufacturer": "string",
+     "model": "string",
+     "type": "string",
+     "operational_date": "string",
+     "first_report_date": "string",
+     "last_report_date": "string",
+     "phase": "string",
+     "envoy_serial_number": "string",
+     "status": "string",
+     "state": "string"
+    },
+    "evidence": [
+     "openapi/_original/enphase-commissioning-api-openapi.json#GET /api/v4/systems/{system_id}/meters/{serial_number}"
+    ]
+   },
+   "gridx-ai": {
+    "segments": [
+     "meter"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "from": "string",
+     "to": "string",
+     "importActivePower": "number",
+     "exportActivePower": "number",
+     "maxImportActivePower": "number",
+     "maxExportActivePower": "number"
+    },
+    "evidence": [
+     "openapi/_original/gridx-ai-openapi.yml#GET /systems/{systemID}/timeofuse/forecasts/meter",
+     "openapi/_original/gridx-api.json#GET /systems/{systemID}/timeofuse/forecasts/meter"
+    ]
+   },
+   "iec-cim": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "mRID": "string",
+     "name": "string",
+     "serialNumber": "string",
+     "utcNumber": "string",
+     "meterType": "string",
+     "communicationMethod": "string",
+     "serviceLocation": "object",
+     "usagePoint": "object",
+     "installationDate": "string",
+     "lastCommunication": "string"
+    },
+    "evidence": [
+     "openapi/_original/iec-cim-61968-distribution-openapi.yml#GET /meters"
+    ]
+   },
+   "leap": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "job_id": "string",
+     "status": "string",
+     "file_name": "string",
+     "assets_count": "integer",
+     "assets_created_count": "integer",
+     "assets_updated_count": "integer",
+     "assets_failed_count": "integer",
+     "transmission_regions": "array",
+     "created_at": "string",
+     "updated_at": "string",
+     "partner_reference": "string",
+     "transmission_region": "string",
+     "customer_classification": "string",
+     "load_types": "array",
+     "meter_type": "string",
+     "customer": "object",
+     "device": "object",
+     "site": "object",
+     "caiso": "object",
+     "isone": "object",
+     "nyiso": "object",
+     "utility_name": "string",
+     "load_serving_entity": "string",
+     "electric_service_account_number": "string",
+     "tariff": "string",
+     "voltage": "string",
+     "utility_meter_serial_number": "string",
+     "customer_group": "string",
+     "status_detail": "object",
+     "meter_id": "string",
+     "onboarding_token": "string",
+     "provisional_asset": "object",
+     "connection_references": "array",
+     "tags": "array",
+     "is_archived": "boolean",
+     "bill_service_agreement_number": "string",
+     "bill_customer_account_number": "string",
+     "created_by": "string",
+     "customer_name": "string",
+     "program": "string",
+     "missed_revenue": "number",
+     "nomination_w": "number",
+     "response_percentage": "number",
+     "number_of_events": "integer",
+     "historical_responsiveness": "string",
+     "year_month": "string",
+     "meter_id_contains": "string",
+     "partner_reference_contains": "string",
+     "customer_name_contains": "string",
+     "programs": "array",
+     "include_meter_programs": "array",
+     "exclude_meter_programs": "array",
+     "page_token": "string",
+     "page_size": "integer",
+     "sort": "array"
+    },
+    "evidence": [
+     "openapi/_original/leap-create-meters-openapi-original.yml#GET /v1.1/jobs/meters",
+     "openapi/_original/leap-create-meters-openapi-original.yml#GET /v1.1/jobs/meters/{job_id}",
+     "openapi/_original/leap-create-meters-openapi-original.yml#POST /v1.1/jobs/meters",
+     "openapi/_original/leap-create-meters-openapi-original.yml#POST /v1.1/meters",
+     "openapi/_original/leap-meters-openapi-original.yml#GET /v2/meters/{meter_id}",
+     "openapi/_original/leap-settlement-openapi-original.yml#POST /v1.1/performance/diagnosis/monthly/unresponsive/meters"
+    ]
+   },
+   "leapfrog-power": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "job_id": "string",
+     "status": "string",
+     "file_name": "string",
+     "assets_count": "integer",
+     "assets_created_count": "integer",
+     "assets_updated_count": "integer",
+     "assets_failed_count": "integer",
+     "transmission_regions": "array",
+     "created_at": "string",
+     "updated_at": "string",
+     "partner_reference": "string",
+     "transmission_region": "string",
+     "customer_classification": "string",
+     "load_types": "array",
+     "meter_type": "string",
+     "customer": "object",
+     "device": "object",
+     "site": "object",
+     "caiso": "object",
+     "isone": "object",
+     "nyiso": "object",
+     "utility_name": "string",
+     "load_serving_entity": "string",
+     "electric_service_account_number": "string",
+     "tariff": "string",
+     "voltage": "string",
+     "utility_meter_serial_number": "string",
+     "customer_group": "string",
+     "status_detail": "object",
+     "meter_id": "string",
+     "onboarding_token": "string",
+     "provisional_asset": "object",
+     "connection_references": "array",
+     "tags": "array",
+     "is_archived": "boolean",
+     "bill_service_agreement_number": "string",
+     "bill_customer_account_number": "string",
+     "created_by": "string",
+     "customer_name": "string",
+     "program": "string",
+     "missed_revenue": "number",
+     "nomination_w": "number",
+     "response_percentage": "number",
+     "number_of_events": "integer",
+     "historical_responsiveness": "string",
+     "year_month": "string",
+     "meter_id_contains": "string",
+     "partner_reference_contains": "string",
+     "customer_name_contains": "string",
+     "programs": "array",
+     "include_meter_programs": "array",
+     "exclude_meter_programs": "array",
+     "page_token": "string",
+     "page_size": "integer",
+     "sort": "array"
+    },
+    "evidence": [
+     "openapi/_original/leapfrog-power-create-meters-openapi.yml#GET /v1.1/jobs/meters",
+     "openapi/_original/leapfrog-power-create-meters-openapi.yml#GET /v1.1/jobs/meters/{job_id}",
+     "openapi/_original/leapfrog-power-create-meters-openapi.yml#POST /v1.1/jobs/meters",
+     "openapi/_original/leapfrog-power-create-meters-openapi.yml#POST /v1.1/meters",
+     "openapi/_original/leapfrog-power-meter-details-openapi.yml#GET /v2/meters/{meter_id}",
+     "openapi/_original/leapfrog-power-revenue-analytics-openapi.yml#POST /v1.1/performance/diagnosis/monthly/unresponsive/meters"
+    ]
+   },
+   "measurabl": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "links": "object",
+     "meta": "object",
+     "meterType": "string",
+     "units": "string",
+     "name": "string",
+     "mode": "string",
+     "servesExteriorAreas": "boolean",
+     "renewableOffsite": "boolean",
+     "trackingInstrument": "string",
+     "activationDate": "string",
+     "deactivationDate": "string",
+     "autoActivationDate": "boolean",
+     "currency": "string",
+     "intermittent": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/measurabl-core-openapi.json#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/meters",
+     "openapi/_original/measurabl-core-openapi.json#PATCH /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}",
+     "openapi/_original/measurabl-core-openapi.json#POST /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters",
+     "openapi/_original/measurabl-core-openapi.yml#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}",
+     "openapi/_original/measurabl-core-openapi.yml#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters",
+     "openapi/_original/measurabl-core-openapi.yml#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}",
+     "openapi/_original/measurabl-core-openapi.yml#GET /core/v0/portfolios/{portfolio_id}/meters",
+     "openapi/_original/measurabl-core-openapi.yml#PATCH /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}",
+     "openapi/_original/measurabl-core-openapi.yml#POST /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters"
+    ]
+   },
+   "origin-energy": {
+    "segments": [
+     "servicepoints"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "nationalMeteringId": "string",
+     "servicePointClassification": "string",
+     "servicePointStatus": "string",
+     "jurisdictionCode": "string",
+     "isGenerator": "boolean",
+     "validFromDate": "string",
+     "lastUpdateDateTime": "string",
+     "lastConsumerChangeDate": "string",
+     "consumerProfile": "object",
+     "distributionLossFactor": "object",
+     "relatedParticipants": "array",
+     "location": null,
+     "meters": "array"
+    },
+    "evidence": [
+     "openapi/_original/consumer-data-standards-energy-api-openapi.json#GET /energy/electricity/servicepoints",
+     "openapi/_original/consumer-data-standards-energy-api-openapi.json#GET /energy/electricity/servicepoints/{servicePointId}"
+    ]
+   },
+   "powershop": {
+    "segments": [
+     "servicepoints"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "nationalMeteringId": "string",
+     "servicePointClassification": "string",
+     "servicePointStatus": "string",
+     "jurisdictionCode": "string",
+     "isGenerator": "boolean",
+     "validFromDate": "string",
+     "lastUpdateDateTime": "string",
+     "lastConsumerChangeDate": "string",
+     "consumerProfile": "object",
+     "distributionLossFactor": "object",
+     "relatedParticipants": "array",
+     "location": null,
+     "meters": "array"
+    },
+    "evidence": [
+     "openapi/_original/powershop-cdr-energy-api-openapi.json#GET /energy/electricity/servicepoints",
+     "openapi/_original/powershop-cdr-energy-api-openapi.json#GET /energy/electricity/servicepoints/{servicePointId}"
+    ]
+   },
+   "red-energy": {
+    "segments": [
+     "servicepoints"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "consumerProfile": "object",
+     "isGenerator": "boolean",
+     "jurisdictionCode": "string",
+     "lastConsumerChangeDate": "string",
+     "lastUpdateDateTime": "string",
+     "nationalMeteringId": "string",
+     "servicePointClassification": "string",
+     "servicePointId": null,
+     "servicePointStatus": "string",
+     "validFromDate": "string",
+     "distributionLossFactor": "object",
+     "location": null,
+     "meters": "array",
+     "relatedParticipants": "array"
+    },
+    "evidence": [
+     "openapi/_original/red-energy-cds-energy-openapi.yml#GET /energy/electricity/servicepoints",
+     "openapi/_original/red-energy-cds-energy-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}"
+    ]
+   },
+   "simply-energy": {
+    "segments": [
+     "servicepoints"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "nationalMeteringId": "string",
+     "servicePointClassification": "string",
+     "servicePointStatus": "string",
+     "jurisdictionCode": "string",
+     "isGenerator": "boolean",
+     "validFromDate": "string",
+     "lastUpdateDateTime": "string",
+     "lastConsumerChangeDate": "string",
+     "consumerProfile": "object",
+     "distributionLossFactor": "object",
+     "relatedParticipants": "array",
+     "location": null,
+     "meters": "array"
+    },
+    "evidence": [
+     "openapi/_original/simply-energy-cds-energy-openapi.yml#GET /energy/electricity/servicepoints",
+     "openapi/_original/simply-energy-cds-energy-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}"
+    ]
+   },
+   "urjanet": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/urjanet-openapi.yml#GET /utility/meters",
+     "openapi/_original/urjanet-openapi.yml#PATCH /utility/meters/{meterId}"
+    ]
+   },
+   "utilityapi": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "uid": "string",
+     "authorization_uid": "string",
+     "utility": "string",
+     "service_address": "string",
+     "meter_number": "string",
+     "service_class": "string",
+     "status": "string",
+     "created": "string",
+     "modified": "string",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/utilityapi-openapi.yml#GET /meters",
+     "openapi/_original/utilityapi-openapi.yml#GET /meters/{uid}",
+     "openapi/_original/utilityapi-openapi.yml#PUT /meters/{uid}"
+    ]
+   },
+   "wegowise": {
+    "segments": [
+     "meters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "account_number": "string",
+     "data_type": "string",
+     "nickname": "string",
+     "notes": "string",
+     "utility_company_id": "integer",
+     "building_id": "integer",
+     "apartment_id": "integer",
+     "area_id": "integer",
+     "last_import_date": "string",
+     "username": "string",
+     "password": "string"
+    },
+    "evidence": [
+     "openapi/_original/wegowise-openapi.yml#DELETE /api/v1/wego_data/meters/{id}",
+     "openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_data/meters",
+     "openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_data/meters/{id}",
+     "openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_pro/buildings/{id}/meters",
+     "openapi/_original/wegowise-openapi.yml#POST /api/v1/wego_data/meters",
+     "openapi/_original/wegowise-openapi.yml#PUT /api/v1/wego_data/meters/{id}"
+    ]
+   }
+  },
+  "meter_reading": {
+   "aemo": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "registerId": "string",
+     "registerSuffix": "string",
+     "meterId": "string",
+     "controlledLoad": "boolean",
+     "readStartDate": "string",
+     "readEndDate": "string",
+     "unitOfMeasure": "string",
+     "readUType": "string",
+     "basicRead": "object",
+     "intervalRead": "object",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/aemo-cdr-openapi.yml#GET /electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/aemo-cdr-openapi.yml#POST /electricity/servicepoints/usage",
+     "openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/usage",
+     "openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/aemo-cds-energy-api-openapi.yml#POST /energy/electricity/servicepoints/usage"
+    ]
+   },
+   "aer": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "registerId": "string",
+     "registerSuffix": "string",
+     "meterId": "string",
+     "controlledLoad": "boolean",
+     "readStartDate": "string",
+     "readEndDate": "string",
+     "unitOfMeasure": "string",
+     "readUType": "string",
+     "basicRead": "object",
+     "intervalRead": "object",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/cdr-energy-api-openapi.json#GET /energy/electricity/servicepoints/usage",
+     "openapi/_original/cdr-energy-api-openapi.json#GET /energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/cdr-energy-api-openapi.json#POST /energy/electricity/servicepoints/usage"
+    ]
+   },
+   "agl-energy": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "registerId": "string",
+     "registerSuffix": "string",
+     "meterId": "string",
+     "controlledLoad": "boolean",
+     "readStartDate": "string",
+     "readEndDate": "string",
+     "unitOfMeasure": "string",
+     "readUType": "string",
+     "basicRead": "object",
+     "intervalRead": "object",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/agl-energy-cds-energy-openapi.json#GET /energy/electricity/servicepoints/usage",
+     "openapi/_original/agl-energy-cds-energy-openapi.json#GET /energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/agl-energy-cds-energy-openapi.json#POST /energy/electricity/servicepoints/usage"
+    ]
+   },
+   "alinta-energy": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "registerId": "string",
+     "registerSuffix": "string",
+     "meterId": "string",
+     "controlledLoad": "boolean",
+     "readStartDate": "string",
+     "readEndDate": "string",
+     "unitOfMeasure": "string",
+     "readUType": "string",
+     "basicRead": "object",
+     "intervalRead": "object",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/alinta-energy-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/usage",
+     "openapi/_original/alinta-energy-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/alinta-energy-cds-energy-api-openapi.yml#POST /energy/electricity/servicepoints/usage"
+    ]
+   },
+   "amber-electric": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "type": "string",
+     "duration": "integer",
+     "spotPerKwh": "number",
+     "perKwh": "number",
+     "date": "string",
+     "nemTime": "string",
+     "startTime": "string",
+     "endTime": "string",
+     "renewables": "number",
+     "channelType": "string",
+     "tariffInformation": null,
+     "spikeStatus": "string",
+     "descriptor": "string",
+     "channelIdentifier": "string",
+     "kwh": "number",
+     "quality": "string",
+     "cost": "number"
+    },
+    "evidence": [
+     "openapi/_original/amber-electric-public-api-openapi.json#GET /sites/{siteId}/usage"
+    ]
+   },
+   "arcadia": {
+    "segments": [
+     "intervals"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "start_time": "string",
+     "end_time": "string",
+     "consumption_kwh": "number",
+     "generation_kwh": "number",
+     "net_kwh": "number",
+     "kwh": "number",
+     "is_null_kwh": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/arcadia-plug-openapi.yml#GET /plug/utility_statements/{utility_statement_id}/intervals"
+    ]
+   },
+   "arcadia-power": {
+    "segments": [
+     "intervals"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "downloadMethod": "string",
+     "endAt": "string",
+     "globalSearch": "string",
+     "ids": "array",
+     "intervalFormat": "string",
+     "intervalTimeZone": "string",
+     "search": "string",
+     "startAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/arcadia-power-openapi.json#POST /plug/meters/downloads/intervals",
+     "openapi/_original/arcadia-power-openapi.json#POST /plug/sites/downloads/intervals"
+    ]
+   },
+   "bayou-energy": {
+    "segments": [
+     "intervals"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "start": "string",
+     "end": "string",
+     "net_consumption": "number"
+    },
+    "evidence": [
+     "openapi/_original/bayou-energy-openapi.yml#GET /customers/{id}/intervals"
+    ]
+   },
+   "cdr-energy": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "registerId": "string",
+     "registerSuffix": "string",
+     "meterId": "string",
+     "controlledLoad": "boolean",
+     "readStartDate": "string",
+     "readEndDate": "string",
+     "unitOfMeasure": "string",
+     "readUType": "string",
+     "basicRead": "object",
+     "intervalRead": "object",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/cdr-energy-openapi.json#GET /energy/electricity/servicepoints/usage",
+     "openapi/_original/cdr-energy-openapi.json#GET /energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/cdr-energy-openapi.json#POST /energy/electricity/servicepoints/usage",
+     "openapi/_original/cdr-energy-sdh-openapi.json#GET /secondary/energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/cdr-energy-sdh-openapi.json#POST /secondary/energy/electricity/servicepoints/usage"
+    ]
+   },
+   "chargefox": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "uuid": "string",
+     "auth_id": "string",
+     "vehicle": "object",
+     "customer": "object",
+     "location": "object",
+     "start_date_time": "string",
+     "stop_date_time": "string",
+     "total_time": "integer",
+     "cost_to_driver": "number",
+     "consumption": "number",
+     "total_parking_time": "integer",
+     "invoice_number": "string",
+     "charging_periods": "array"
+    },
+    "evidence": [
+     "openapi/_original/chargefox-fleets-api-openapi.json#GET /api/fleets/v1/usage"
+    ]
+   },
+   "cms-energy": {
+    "segments": [
+     "intervals"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/cms-energy-openapi.yml#GET /intervals"
+    ]
+   },
+   "edf-energy": {
+    "segments": [
+     "consumption"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "consumption": "string",
+     "interval_start": "string",
+     "interval_end": "string"
+    },
+    "evidence": [
+     "openapi/_original/edf-energy-kraken-openapi.yml#GET /v1/electricity-meter-points/{mpan}/meters/{serial_number}/consumption/",
+     "openapi/_original/edf-energy-kraken-openapi.yml#GET /v1/gas-meter-points/{mprn}/meters/{serial_number}/consumption/"
+    ]
+   },
+   "eliq": {
+    "segments": [
+     "consumption"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "consumption": "array",
+     "production": "array",
+     "import": "array",
+     "export": "array",
+     "price": "array",
+     "co2emission": "object",
+     "resolution": "string",
+     "fuel": "string",
+     "unit": "string",
+     "from": "string",
+     "to": "string",
+     "estimated_from": "string",
+     "is_ondemand": "boolean",
+     "values": "array"
+    },
+    "evidence": [
+     "openapi/_original/eliq-insights-api-openapi.yaml#GET /v3/locations/{locationId}/consumption",
+     "openapi/_original/eliq-insights-api-openapi.yaml#GET /v3/locations/{locationId}/similarhomes/consumption"
+    ]
+   },
+   "energy-queensland": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "basicRead": "object",
+     "controlledLoad": "boolean",
+     "intervalRead": "object",
+     "meterId": "string",
+     "readEndDate": "string",
+     "readStartDate": "string",
+     "readUType": "string",
+     "registerId": "string",
+     "registerSuffix": "string",
+     "servicePointId": null,
+     "unitOfMeasure": "string",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/energy-queensland-cds-energy-openapi.yml#GET /energy/electricity/servicepoints/usage",
+     "openapi/_original/energy-queensland-cds-energy-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/energy-queensland-cds-energy-openapi.yml#POST /energy/electricity/servicepoints/usage"
+    ]
+   },
+   "energy-utilities": {
+    "segments": [
+     "intervals"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/energy-utilities-openapi.yml#GET /intervals"
+    ]
+   },
+   "energyaustralia": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "registerId": "string",
+     "registerSuffix": "string",
+     "meterId": "string",
+     "controlledLoad": "boolean",
+     "readStartDate": "string",
+     "readEndDate": "string",
+     "unitOfMeasure": "string",
+     "readUType": "string",
+     "basicRead": "object",
+     "intervalRead": "object",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/energyaustralia-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/usage",
+     "openapi/_original/energyaustralia-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/energyaustralia-cds-energy-api-openapi.yml#POST /energy/electricity/servicepoints/usage"
+    ]
+   },
+   "ev-energy": {
+    "segments": [
+     "energy_usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "interval_seconds": "integer",
+     "started_at": "string",
+     "total_energy_delivered_watt_hours": "integer",
+     "meter_usage_watt_hours": "integer",
+     "alt_usage_watt_hours": "integer",
+     "percentage_import": "integer",
+     "electricity_cost_sub_unit": "string",
+     "energy_delivered_by_price": "object"
+    },
+    "evidence": [
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#GET /charging_sub_sessions/{charging_sub_session_id}/energy_usage"
+    ]
+   },
+   "genability": {
+    "segments": [
+     "intervals",
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/genability-signal-openapi.json#GET /rest/public/timeofuses/intervals/{touId}",
+     "openapi/_original/genability-signal-openapi.json#GET /rest/public/timeofuses/{lseId}/{touGroupId}/intervals",
+     "openapi/_original/genability-signal-openapi.json#GET /rest/v1/orgs/usage"
+    ]
+   },
+   "gridstatus": {
+    "segments": [
+     "intervals"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "year": "integer",
+     "count": "integer",
+     "months": null
+    },
+    "evidence": [
+     "openapi/_original/gridstatus-openapi.json#GET /constraints/{constraint_id}/intervals"
+    ]
+   },
+   "gridx": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/gridx-openapi.yml#GET /customer/usage"
+    ]
+   },
+   "hildebrand": {
+    "segments": [
+     "readings"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "status": "string",
+     "name": "string",
+     "resourceTypeId": "string",
+     "resourceId": "string",
+     "classifier": "string",
+     "data": "array",
+     "units": "string",
+     "query": "object"
+    },
+    "evidence": [
+     "openapi/_original/hildebrand-glowmarkt-resource-system-swagger.json#GET /resource/{id}/readings"
+    ]
+   },
+   "iec-cim": {
+    "segments": [
+     "readings"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "mRID": "string",
+     "meterMRID": "string",
+     "readingType": "string",
+     "timeStamp": "string",
+     "value": "number",
+     "unit": "string",
+     "multiplier": "string",
+     "quality": "string"
+    },
+    "evidence": [
+     "openapi/_original/iec-cim-61968-distribution-openapi.yml#GET /meters/{mRID}/readings"
+    ]
+   },
+   "measurabl": {
+    "segments": [
+     "readings"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "links": "object",
+     "meta": "object",
+     "fromDate": "string",
+     "toDate": "string",
+     "cost": "decimal",
+     "usage": "decimal",
+     "exported": "decimal",
+     "demand": "boolean",
+     "demandCharge": "string",
+     "quantity": "decimal",
+     "timesEmptied": "decimal",
+     "avgPercentFull": "decimal",
+     "landfillPct": "decimal",
+     "incinerationPct": "decimal",
+     "wtePct": "decimal",
+     "unknownPct": "decimal"
+    },
+    "evidence": [
+     "openapi/_original/measurabl-core-openapi.json#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/readings/{meter_reading_id}",
+     "openapi/_original/measurabl-core-openapi.json#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/waste_meters/{waste_meter_id}/readings/{waste_meter_reading_id}",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/readings",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/readings/{meter_reading_id}",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/waste_meters/{waste_meter_id}/readings",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/waste_meters/{waste_meter_id}/readings/{waste_meter_reading_id}",
+     "openapi/_original/measurabl-core-openapi.json#PATCH /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/readings/{meter_reading_id}",
+     "openapi/_original/measurabl-core-openapi.json#PATCH /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/waste_meters/{waste_meter_id}/readings/{waste_meter_reading_id}",
+     "openapi/_original/measurabl-core-openapi.json#POST /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/readings",
+     "openapi/_original/measurabl-core-openapi.json#POST /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/waste_meters/{waste_meter_id}/readings",
+     "openapi/_original/measurabl-core-openapi.yml#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/readings/{meter_reading_id}",
+     "openapi/_original/measurabl-core-openapi.yml#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/waste_meters/{waste_meter_id}/readings/{waste_meter_reading_id}"
+    ]
+   },
+   "nomos": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "start": "string",
+     "usage": "number",
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/nomos-openapi-original.json#GET /subscriptions/{id}/usage"
+    ]
+   },
+   "octopus-energy": {
+    "segments": [
+     "consumption"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "count": "integer",
+     "next": "string",
+     "previous": "string",
+     "consumption": "number",
+     "interval_start": "string",
+     "interval_end": "string"
+    },
+    "evidence": [
+     "openapi/_original/octopus-energy-public-api-openapi.yml#GET /electricity-meter-points/{mpan}/meters/{serial_number}/consumption/",
+     "openapi/_original/octopus-energy-public-api-openapi.yml#GET /gas-meter-points/{mprn}/meters/{serial_number}/consumption/"
+    ]
+   },
+   "origin-energy": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "registerId": "string",
+     "registerSuffix": "string",
+     "meterId": "string",
+     "controlledLoad": "boolean",
+     "readStartDate": "string",
+     "readEndDate": "string",
+     "unitOfMeasure": "string",
+     "readUType": "string",
+     "basicRead": "object",
+     "intervalRead": "object",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/consumer-data-standards-energy-api-openapi.json#GET /energy/electricity/servicepoints/usage",
+     "openapi/_original/consumer-data-standards-energy-api-openapi.json#GET /energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/consumer-data-standards-energy-api-openapi.json#POST /energy/electricity/servicepoints/usage"
+    ]
+   },
+   "powershop": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "registerId": "string",
+     "registerSuffix": "string",
+     "meterId": "string",
+     "controlledLoad": "boolean",
+     "readStartDate": "string",
+     "readEndDate": "string",
+     "unitOfMeasure": "string",
+     "readUType": "string",
+     "basicRead": "object",
+     "intervalRead": "object",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/powershop-cdr-energy-api-openapi.json#GET /energy/electricity/servicepoints/usage",
+     "openapi/_original/powershop-cdr-energy-api-openapi.json#GET /energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/powershop-cdr-energy-api-openapi.json#POST /energy/electricity/servicepoints/usage"
+    ]
+   },
+   "red-energy": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "basicRead": "object",
+     "controlledLoad": "boolean",
+     "intervalRead": "object",
+     "meterId": "string",
+     "readEndDate": "string",
+     "readStartDate": "string",
+     "readUType": "string",
+     "registerId": "string",
+     "registerSuffix": "string",
+     "servicePointId": null,
+     "unitOfMeasure": "string",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/red-energy-cds-energy-openapi.yml#GET /energy/electricity/servicepoints/usage",
+     "openapi/_original/red-energy-cds-energy-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/red-energy-cds-energy-openapi.yml#POST /energy/electricity/servicepoints/usage"
+    ]
+   },
+   "sense": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "icon": "string",
+     "consumption": "object"
+    },
+    "evidence": [
+     "openapi/_original/sense-sense-client-api-openapi.yml#GET /app/monitors/{monitor_id}/history/usage"
+    ]
+   },
+   "simply-energy": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "servicePointId": null,
+     "registerId": "string",
+     "registerSuffix": "string",
+     "meterId": "string",
+     "controlledLoad": "boolean",
+     "readStartDate": "string",
+     "readEndDate": "string",
+     "unitOfMeasure": "string",
+     "readUType": "string",
+     "basicRead": "object",
+     "intervalRead": "object",
+     "servicePointIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/simply-energy-cds-energy-openapi.yml#GET /energy/electricity/servicepoints/usage",
+     "openapi/_original/simply-energy-cds-energy-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}/usage",
+     "openapi/_original/simply-energy-cds-energy-openapi.yml#POST /energy/electricity/servicepoints/usage"
+    ]
+   },
+   "teco-energy": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "startTime": "string",
+     "endTime": "string",
+     "usage": "number",
+     "cost": "number",
+     "temperature": "number"
+    },
+    "evidence": [
+     "openapi/_original/teco-energy-account-openapi.yml#GET /accounts/{accountNumber}/usage"
+    ]
+   },
+   "utilityapi": {
+    "segments": [
+     "intervals"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "uid": "string",
+     "meter_uid": "string",
+     "start": "string",
+     "end": "string",
+     "kwh": "number",
+     "created": "string"
+    },
+    "evidence": [
+     "openapi/_original/utilityapi-openapi.yml#GET /intervals"
+    ]
+   },
+   "viridi-parente": {
+    "segments": [
+     "usage"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "devices": "integer",
+     "maxDevices": "integer",
+     "assets": "integer",
+     "maxAssets": "integer",
+     "customers": "integer",
+     "maxCustomers": "integer",
+     "users": "integer",
+     "maxUsers": "integer",
+     "dashboards": "integer",
+     "maxDashboards": "integer",
+     "transportMessages": "integer",
+     "maxTransportMessages": "integer",
+     "jsExecutions": "integer",
+     "tbelExecutions": "integer",
+     "maxJsExecutions": "integer",
+     "maxTbelExecutions": "integer",
+     "emails": "integer",
+     "maxEmails": "integer",
+     "sms": "integer",
+     "maxSms": "integer",
+     "smsEnabled": "boolean",
+     "alarms": "integer",
+     "maxAlarms": "integer",
+     "ruleChainId": "object",
+     "ruleNodeId": "object",
+     "ruleChainName": "string",
+     "ruleNodeName": "string",
+     "labels": "array"
+    },
+    "evidence": [
+     "openapi/_original/viridi-parente-vista-openapi.json#GET /api/ruleChain/{ruleChainId}/output/labels/usage",
+     "openapi/_original/viridi-parente-vista-openapi.json#GET /api/usage",
+     "openapi/_original/viridi-parente-vista-openapi_2.json#GET /api/ruleChain/{ruleChainId}/output/labels/usage",
+     "openapi/_original/viridi-parente-vista-openapi_2.json#GET /api/usage"
+    ]
+   }
+  },
+  "utility_account": {
+   "aemo": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "accountId": null,
+     "accountNumber": "string",
+     "displayName": "string",
+     "openStatus": "string",
+     "creationDate": "string",
+     "nickname": "string",
+     "servicePointIds": "array",
+     "planOverview": "object",
+     "firstName": "string",
+     "lastName": "string",
+     "middleNames": "array",
+     "prefix": "string",
+     "suffix": "string"
+    },
+    "evidence": [
+     "openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/accounts",
+     "openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/accounts/{accountId}"
+    ]
+   },
+   "aer": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "accountId": null,
+     "accountNumber": "string",
+     "displayName": "string",
+     "openStatus": "string",
+     "creationDate": "string",
+     "nickname": "string",
+     "servicePointIds": "array",
+     "planOverview": "object",
+     "firstName": "string",
+     "lastName": "string",
+     "middleNames": "array",
+     "prefix": "string",
+     "suffix": "string"
+    },
+    "evidence": [
+     "openapi/_original/cdr-energy-api-openapi.json#GET /energy/accounts",
+     "openapi/_original/cdr-energy-api-openapi.json#GET /energy/accounts/{accountId}"
+    ]
+   },
+   "agl-energy": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "accountId": null,
+     "accountNumber": "string",
+     "displayName": "string",
+     "openStatus": "string",
+     "creationDate": "string",
+     "nickname": "string",
+     "servicePointIds": "array",
+     "planOverview": "object",
+     "firstName": "string",
+     "lastName": "string",
+     "middleNames": "array",
+     "prefix": "string",
+     "suffix": "string"
+    },
+    "evidence": [
+     "openapi/_original/agl-energy-cds-energy-openapi.json#GET /energy/accounts",
+     "openapi/_original/agl-energy-cds-energy-openapi.json#GET /energy/accounts/{accountId}"
+    ]
+   },
+   "alinta-energy": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "accountId": null,
+     "accountNumber": "string",
+     "displayName": "string",
+     "openStatus": "string",
+     "creationDate": "string",
+     "nickname": "string",
+     "servicePointIds": "array",
+     "planOverview": "object",
+     "firstName": "string",
+     "lastName": "string",
+     "middleNames": "array",
+     "prefix": "string",
+     "suffix": "string"
+    },
+    "evidence": [
+     "openapi/_original/alinta-energy-cds-energy-api-openapi.yml#GET /energy/accounts",
+     "openapi/_original/alinta-energy-cds-energy-api-openapi.yml#GET /energy/accounts/{accountId}"
+    ]
+   },
+   "arcadia-power": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "accountNumber": "string",
+     "billingCycle": "string",
+     "businessUnits": "array",
+     "correlationIds": "array",
+     "createdAt": "string",
+     "createdBy": "string",
+     "customData": "object",
+     "firstExtractedAt": "string",
+     "id": "string",
+     "isAccessible": "boolean",
+     "isCustomerActionRequired": "boolean",
+     "isHistoryFulfilled": "boolean",
+     "isIntervalsThirdPartyPortalAccount": "boolean",
+     "isStatementsProductActive": "boolean",
+     "lastModifiedAt": "string",
+     "lastModifiedBy": "string",
+     "lastSuccessfulStatementExtractionAt": "string",
+     "latestNewStatementAt": "string",
+     "latestStatementDate": "string",
+     "nextExpectedPostDate": "string",
+     "normalizedAccountNumber": "string",
+     "prepaid": "boolean",
+     "provider": "object",
+     "providerClassification": "string",
+     "serviceTypes": "array",
+     "siteNames": "array",
+     "status": "string",
+     "statusDetail": "string",
+     "summaryAccountId": "string",
+     "summaryAccountNumber": "string",
+     "totalMeters": "integer",
+     "type": "string",
+     "voidedAt": "string",
+     "businessUnitIds": "array",
+     "correlationId": "string",
+     "isActive": "boolean",
+     "providerId": "string"
+    },
+    "evidence": [
+     "openapi/_original/arcadia-power-openapi.json#GET /plug/accounts",
+     "openapi/_original/arcadia-power-openapi.json#GET /plug/accounts/{accountId}",
+     "openapi/_original/arcadia-power-openapi.json#PATCH /plug/accounts/{accountId}",
+     "openapi/_original/arcadia-power-openapi.json#POST /plug/accounts",
+     "openapi/_original/arcadia-power-openapi.json#PUT /plug/accounts/{accountId}"
+    ]
+   },
+   "cdr-energy": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "accountId": null,
+     "accountNumber": "string",
+     "displayName": "string",
+     "openStatus": "string",
+     "creationDate": "string",
+     "nickname": "string",
+     "servicePointIds": "array",
+     "planOverview": "object",
+     "firstName": "string",
+     "lastName": "string",
+     "middleNames": "array",
+     "prefix": "string",
+     "suffix": "string"
+    },
+    "evidence": [
+     "openapi/_original/cdr-energy-openapi.json#GET /energy/accounts",
+     "openapi/_original/cdr-energy-openapi.json#GET /energy/accounts/{accountId}"
+    ]
+   },
+   "edf-energy": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "payload": null,
+     "task_params": null,
+     "number": "string",
+     "brand_code": "string",
+     "reference": "string",
+     "sold_at": "string",
+     "preferred_ssd": "string",
+     "account_type": "string",
+     "source": "string",
+     "sales_channel": "string",
+     "sales_subchannel": "string",
+     "billing_address": "object",
+     "users": "array",
+     "affiliate": "object",
+     "metadata": "array",
+     "referral_code": "string",
+     "signup_reward_code": "string",
+     "promo_reward_code": "string",
+     "account_reference": "string",
+     "is_change_of_tenancy": "boolean",
+     "requires_postal_comms": "boolean",
+     "smart_meter_read_permission": "string",
+     "smart_meter_interest": "string",
+     "business": "object",
+     "payment": null,
+     "deposit": "object",
+     "electricity_meter_points": "array",
+     "gas_meter_points": "array",
+     "quote_code": "string",
+     "quote_request_code": "string",
+     "billing_options": null
+    },
+    "evidence": [
+     "openapi/_original/edf-energy-kraken-data-import-openapi.yml#POST /v2/data-import/accounts/",
+     "openapi/_original/edf-energy-kraken-openapi.yml#POST /v1/accounts/"
+    ]
+   },
+   "eliq": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "created_at_utc": "string"
+    },
+    "evidence": [
+     "openapi/_original/eliq-data-management-api-openapi.json#DELETE /portfolio/accounts/{id}",
+     "openapi/_original/eliq-data-management-api-openapi.json#GET /portfolio/accounts",
+     "openapi/_original/eliq-data-management-api-openapi.json#GET /portfolio/accounts/{id}",
+     "openapi/_original/eliq-data-management-api-openapi.json#PUT /portfolio/accounts/{id}"
+    ]
+   },
+   "energy-queensland": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "accountId": null,
+     "accountNumber": "string",
+     "creationDate": "string",
+     "displayName": "string",
+     "openStatus": "string",
+     "nickname": "string",
+     "planOverview": "object",
+     "servicePointIds": "array",
+     "firstName": "string",
+     "lastName": "string",
+     "middleNames": "array",
+     "prefix": "string",
+     "suffix": "string"
+    },
+    "evidence": [
+     "openapi/_original/energy-queensland-cds-energy-openapi.yml#GET /energy/accounts",
+     "openapi/_original/energy-queensland-cds-energy-openapi.yml#GET /energy/accounts/{accountId}"
+    ]
+   },
+   "energyaustralia": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "accountId": null,
+     "accountNumber": "string",
+     "displayName": "string",
+     "openStatus": "string",
+     "creationDate": "string",
+     "nickname": "string",
+     "servicePointIds": "array",
+     "planOverview": "object",
+     "firstName": "string",
+     "lastName": "string",
+     "middleNames": "array",
+     "prefix": "string",
+     "suffix": "string"
+    },
+    "evidence": [
+     "openapi/_original/energyaustralia-cds-energy-api-openapi.yml#GET /energy/accounts",
+     "openapi/_original/energyaustralia-cds-energy-api-openapi.yml#GET /energy/accounts/{accountId}"
+    ]
+   },
+   "gridx-ai": {
+    "segments": [
+     "accounts",
+     "account"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "name": "string",
+     "email": "string",
+     "solution": "string",
+     "id": "string",
+     "parentID": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "systemsCount": "integer",
+     "kind": "string",
+     "mainAddress": null,
+     "customization": null,
+     "productBundles": "array",
+     "groups": "array",
+     "starredAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/gridx-ai-openapi.yml#DELETE /accounts/{accountID}",
+     "openapi/_original/gridx-ai-openapi.yml#DELETE /user/stars/accounts/{accountID}",
+     "openapi/_original/gridx-ai-openapi.yml#GET /account",
+     "openapi/_original/gridx-ai-openapi.yml#GET /accounts",
+     "openapi/_original/gridx-ai-openapi.yml#GET /accounts/{accountID}",
+     "openapi/_original/gridx-ai-openapi.yml#GET /user/stars/accounts",
+     "openapi/_original/gridx-ai-openapi.yml#PATCH /account",
+     "openapi/_original/gridx-ai-openapi.yml#PATCH /accounts/{accountID}",
+     "openapi/_original/gridx-ai-openapi.yml#POST /accounts",
+     "openapi/_original/gridx-ai-openapi.yml#PUT /user/stars/accounts/{accountID}",
+     "openapi/_original/gridx-api.json#DELETE /accounts/{accountID}",
+     "openapi/_original/gridx-api.json#DELETE /user/stars/accounts/{accountID}"
+    ]
+   },
+   "hildebrand": {
+    "segments": [
+     "account"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "createdAt": "string",
+     "updatedAt": "string",
+     "accountId": "string",
+     "applicationId": "string",
+     "userId": "string",
+     "directoryId": "string",
+     "name": "string",
+     "username": "string",
+     "email": "string",
+     "status": "string",
+     "active": "boolean",
+     "valid": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/hildebrand-glowmarkt-user-system-swagger.json#DELETE /account/{accountId}",
+     "openapi/_original/hildebrand-glowmarkt-user-system-swagger.json#GET /account",
+     "openapi/_original/hildebrand-glowmarkt-user-system-swagger.json#GET /account/{accountId}",
+     "openapi/_original/hildebrand-glowmarkt-user-system-swagger.json#POST /account",
+     "openapi/_original/hildebrand-glowmarkt-user-system-swagger.json#PUT /account/{accountId}"
+    ]
+   },
+   "origin-energy": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "accountId": null,
+     "accountNumber": "string",
+     "displayName": "string",
+     "openStatus": "string",
+     "creationDate": "string",
+     "nickname": "string",
+     "servicePointIds": "array",
+     "planOverview": "object",
+     "firstName": "string",
+     "lastName": "string",
+     "middleNames": "array",
+     "prefix": "string",
+     "suffix": "string",
+     "payload": null,
+     "task_params": null
+    },
+    "evidence": [
+     "openapi/_original/consumer-data-standards-energy-api-openapi.json#GET /energy/accounts",
+     "openapi/_original/consumer-data-standards-energy-api-openapi.json#GET /energy/accounts/{accountId}",
+     "openapi/_original/origin-energy-kraken-data-import-openapi.yml#POST /v2/data-import/accounts/"
+    ]
+   },
+   "powershop": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "accountId": null,
+     "accountNumber": "string",
+     "displayName": "string",
+     "openStatus": "string",
+     "creationDate": "string",
+     "nickname": "string",
+     "servicePointIds": "array",
+     "planOverview": "object",
+     "firstName": "string",
+     "lastName": "string",
+     "middleNames": "array",
+     "prefix": "string",
+     "suffix": "string"
+    },
+    "evidence": [
+     "openapi/_original/powershop-cdr-energy-api-openapi.json#GET /energy/accounts",
+     "openapi/_original/powershop-cdr-energy-api-openapi.json#GET /energy/accounts/{accountId}"
+    ]
+   },
+   "red-energy": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "accountId": null,
+     "accountNumber": "string",
+     "creationDate": "string",
+     "displayName": "string",
+     "openStatus": "string",
+     "nickname": "string",
+     "planOverview": "object",
+     "servicePointIds": "array",
+     "firstName": "string",
+     "lastName": "string",
+     "middleNames": "array",
+     "prefix": "string",
+     "suffix": "string"
+    },
+    "evidence": [
+     "openapi/_original/red-energy-cds-energy-openapi.yml#GET /energy/accounts",
+     "openapi/_original/red-energy-cds-energy-openapi.yml#GET /energy/accounts/{accountId}"
+    ]
+   },
+   "simply-energy": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "accountId": null,
+     "accountNumber": "string",
+     "displayName": "string",
+     "openStatus": "string",
+     "creationDate": "string",
+     "nickname": "string",
+     "servicePointIds": "array",
+     "planOverview": "object",
+     "firstName": "string",
+     "lastName": "string",
+     "middleNames": "array",
+     "prefix": "string",
+     "suffix": "string"
+    },
+    "evidence": [
+     "openapi/_original/simply-energy-cds-energy-openapi.yml#GET /energy/accounts",
+     "openapi/_original/simply-energy-cds-energy-openapi.yml#GET /energy/accounts/{accountId}"
+    ]
+   },
+   "teco-energy": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "accountNumber": "string",
+     "customerName": "string",
+     "serviceAddress": "object",
+     "accountType": "string",
+     "serviceType": "string",
+     "status": "string",
+     "currentBalance": "number",
+     "dueDate": "string",
+     "paperlessBilling": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/teco-energy-account-openapi.yml#GET /accounts/{accountNumber}"
+    ]
+   },
+   "urjanet": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/urjanet-openapi.yml#GET /accounts"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "1komma5",
+    "aedifion",
+    "aemo",
+    "aer",
+    "aeso",
+    "agl-energy",
+    "alectra-utilities",
+    "alinta-energy",
+    "amber-electric",
+    "arcadia",
+    "arcadia-power",
+    "awattar",
+    "bayou-energy",
+    "brick",
+    "carbon-intensity",
+    "cdr-energy",
+    "centrica",
+    "chargefox",
+    "clevergy",
+    "cms-energy",
+    "con-edison",
+    "dcc-smart",
+    "doe",
+    "edf-energy",
+    "eia",
+    "electricity-north-west",
+    "electricitymaps",
+    "elexon",
+    "elhub",
+    "eliq",
+    "endeavour-energy",
+    "energy-charts-api",
+    "energy-queensland",
+    "energy-utilities",
+    "energyaustralia",
+    "enphase",
+    "ercot",
+    "ev-energy",
+    "ferc",
+    "genability",
+    "green-button-alliance",
+    "gridstatus",
+    "gridx",
+    "gridx-ai",
+    "hildebrand",
+    "hydro-ottawa",
+    "hydro-quebec",
+    "iec-cim",
+    "itron",
+    "leap",
+    "leapfrog-power",
+    "lunar-energy",
+    "measurabl",
+    "miso",
+    "modo-energy",
+    "n3rgy",
+    "near-space-labs",
+    "nomos",
+    "northern-powergrid",
+    "octopus-energy",
+    "ontario-energy-board",
+    "openadr-alliance",
+    "origin-energy",
+    "ostrom",
+    "pg-and-e",
+    "pge",
+    "powershop",
+    "red-energy",
+    "reposit-power",
+    "scottishpower",
+    "sense",
+    "simply-energy",
+    "spp",
+    "ssen",
+    "teco-energy",
+    "thermal-power",
+    "toronto-hydro",
+    "ubicquia",
+    "uk-power-networks",
+    "university-of-sheffield",
+    "urjanet",
+    "utilityapi",
+    "verdigris-technologies",
+    "viridi-parente",
+    "virtual-peaker",
+    "voltair",
+    "wattwatchers",
+    "wegowise"
+   ],
+   "kebab-case": [
+    "1komma5",
+    "aedifion",
+    "aemo",
+    "aer",
+    "agl-energy",
+    "alinta-energy",
+    "cdr-energy",
+    "clevergy",
+    "doe",
+    "edf-energy",
+    "eia",
+    "electricitymaps",
+    "elexon",
+    "elhub",
+    "eliq",
+    "energy-queensland",
+    "energy-utilities",
+    "energyaustralia",
+    "ercot",
+    "ev-energy",
+    "ferc",
+    "green-button-alliance",
+    "gridstatus",
+    "gridx-ai",
+    "hildebrand",
+    "iec-cim",
+    "itron",
+    "leap",
+    "leapfrog-power",
+    "miso",
+    "modo-energy",
+    "n3rgy",
+    "nomos",
+    "octopus-energy",
+    "origin-energy",
+    "ostrom",
+    "powershop",
+    "red-energy",
+    "simply-energy",
+    "spp",
+    "teco-energy",
+    "thermal-power",
+    "ubicquia",
+    "university-of-sheffield",
+    "utilityapi",
+    "verdigris-technologies",
+    "viridi-parente",
+    "virtual-peaker",
+    "voltair",
+    "wattwatchers"
+   ],
+   "other": [
+    "1komma5",
+    "aemo",
+    "alectra-utilities",
+    "cdr-energy",
+    "cms-energy",
+    "electricity-north-west",
+    "elhub",
+    "eliq",
+    "endeavour-energy",
+    "ercot",
+    "ev-energy",
+    "genability",
+    "green-button-alliance",
+    "hydro-ottawa",
+    "hydro-quebec",
+    "miso",
+    "nordpool",
+    "northern-powergrid",
+    "pg-and-e",
+    "pge",
+    "scottishpower",
+    "ssen",
+    "toronto-hydro",
+    "uk-power-networks",
+    "university-of-sheffield",
+    "viridi-parente",
+    "voltair",
+    "xylem"
+   ],
+   "snake_case": [
+    "aedifion",
+    "arcadia",
+    "brick",
+    "elhub",
+    "eliq",
+    "energy-charts-api",
+    "enphase",
+    "ercot",
+    "ev-energy",
+    "gridstatus",
+    "leap",
+    "leapfrog-power",
+    "measurabl",
+    "national-energy-system-operator",
+    "near-space-labs",
+    "neso",
+    "nomos",
+    "sense",
+    "university-of-sheffield",
+    "viridi-parente",
+    "wegowise"
+   ],
+   "PascalCase": [
+    "aemo",
+    "aeso",
+    "alectra-utilities",
+    "cms-energy",
+    "con-edison",
+    "elexon",
+    "eliq",
+    "green-button-alliance",
+    "hydro-ottawa",
+    "miso",
+    "nordpool",
+    "ontario-energy-board",
+    "pg-and-e",
+    "pge",
+    "toronto-hydro",
+    "ubicquia",
+    "urjanet",
+    "xylem"
+   ],
+   "camelCase": [
+    "aedifion",
+    "aemo",
+    "aeso",
+    "arcadia-power",
+    "elexon",
+    "eliq",
+    "gridx",
+    "hildebrand",
+    "reposit-power",
+    "ubicquia",
+    "viridi-parente"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "1komma5",
+    "aedifion",
+    "aemo",
+    "amber-electric",
+    "bayou-energy",
+    "carbon-intensity",
+    "cdr-energy",
+    "clevergy",
+    "cms-energy",
+    "doe",
+    "edf-energy",
+    "eia",
+    "electricity-north-west",
+    "elhub",
+    "eliq",
+    "endeavour-energy",
+    "energy-utilities",
+    "ev-energy",
+    "ferc",
+    "gridstatus",
+    "gridx-ai",
+    "hildebrand",
+    "hydro-quebec",
+    "leap",
+    "leapfrog-power",
+    "measurabl",
+    "miso",
+    "n3rgy",
+    "near-space-labs",
+    "nomos",
+    "nordpool",
+    "northern-powergrid",
+    "octopus-energy",
+    "ontario-energy-board",
+    "ostrom",
+    "reposit-power",
+    "scottishpower",
+    "spp",
+    "ssen",
+    "ubicquia",
+    "uk-power-networks",
+    "university-of-sheffield",
+    "utilityapi",
+    "verdigris-technologies",
+    "viridi-parente",
+    "voltair",
+    "wegowise"
+   ],
+   "camelCase": [
+    "1komma5",
+    "aemo",
+    "aer",
+    "agl-energy",
+    "alectra-utilities",
+    "alinta-energy",
+    "amber-electric",
+    "arcadia-power",
+    "cdr-energy",
+    "clevergy",
+    "cms-energy",
+    "con-edison",
+    "doe",
+    "elexon",
+    "elhub",
+    "eliq",
+    "energy-queensland",
+    "energyaustralia",
+    "ercot",
+    "genability",
+    "green-button-alliance",
+    "gridx-ai",
+    "hildebrand",
+    "hydro-ottawa",
+    "iec-cim",
+    "itron",
+    "lunar-energy",
+    "miso",
+    "n3rgy",
+    "openadr-alliance",
+    "origin-energy",
+    "ostrom",
+    "pg-and-e",
+    "pge",
+    "powershop",
+    "red-energy",
+    "reposit-power",
+    "simply-energy",
+    "teco-energy",
+    "toronto-hydro",
+    "urjanet",
+    "verdigris-technologies",
+    "viridi-parente",
+    "voltair"
+   ],
+   "snake_case": [
+    "aedifion",
+    "arcadia",
+    "brick",
+    "doe",
+    "edf-energy",
+    "eia",
+    "electricity-north-west",
+    "eliq",
+    "endeavour-energy",
+    "enphase",
+    "ev-energy",
+    "genability",
+    "gridstatus",
+    "hydro-quebec",
+    "leap",
+    "leapfrog-power",
+    "measurabl",
+    "modo-energy",
+    "near-space-labs",
+    "northern-powergrid",
+    "octopus-energy",
+    "origin-energy",
+    "scottishpower",
+    "sense",
+    "ssen",
+    "ubicquia",
+    "uk-power-networks",
+    "university-of-sheffield"
+   ],
+   "kebab-case": [
+    "aemo",
+    "wattwatchers"
+   ],
+   "other": [
+    "near-space-labs",
+    "virtual-peaker"
+   ],
+   "PascalCase": [
+    "cdr-energy"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "1komma5",
+    "aedifion",
+    "aemo",
+    "aer",
+    "aeso",
+    "agl-energy",
+    "alectra-utilities",
+    "alinta-energy",
+    "amber-electric",
+    "arcadia",
+    "arcadia-power",
+    "awattar",
+    "cdr-energy",
+    "chargefox",
+    "clevergy",
+    "cms-energy",
+    "doe",
+    "edf-energy",
+    "eia",
+    "electricity-north-west",
+    "electricitymaps",
+    "elexon",
+    "elhub",
+    "eliq",
+    "endeavour-energy",
+    "energy-charts-api",
+    "energy-queensland",
+    "energy-utilities",
+    "energyaustralia",
+    "enphase",
+    "entso-e",
+    "ercot",
+    "ev-energy",
+    "genability",
+    "green-button-alliance",
+    "gridstatus",
+    "gridx",
+    "gridx-ai",
+    "hildebrand",
+    "hydro-ottawa",
+    "hydro-quebec",
+    "iec-cim",
+    "leap",
+    "leapfrog-power",
+    "lunar-energy",
+    "measurabl",
+    "miso",
+    "modo-energy",
+    "n3rgy",
+    "national-energy-system-operator",
+    "near-space-labs",
+    "neso",
+    "nomos",
+    "nordpool",
+    "northern-powergrid",
+    "octopus-energy",
+    "ontario-energy-board",
+    "openadr-alliance",
+    "origin-energy",
+    "ostrom",
+    "pge",
+    "powershop",
+    "red-energy",
+    "reposit-power",
+    "scottishpower",
+    "sense",
+    "simply-energy",
+    "spp",
+    "ssen",
+    "teco-energy",
+    "thermal-power",
+    "toronto-hydro",
+    "ubicquia",
+    "uk-power-networks",
+    "university-of-sheffield",
+    "urjanet",
+    "utilityapi",
+    "verdigris-technologies",
+    "viridi-parente",
+    "virtual-peaker",
+    "voltair",
+    "wattwatchers",
+    "wegowise",
+    "xylem"
+   ],
+   "camelCase": [
+    "1komma5",
+    "aedifion",
+    "aemo",
+    "aer",
+    "aeso",
+    "agl-energy",
+    "alinta-energy",
+    "amber-electric",
+    "arcadia-power",
+    "cdr-energy",
+    "clevergy",
+    "con-edison",
+    "elexon",
+    "elhub",
+    "eliq",
+    "energy-queensland",
+    "energyaustralia",
+    "enphase",
+    "entso-e",
+    "ercot",
+    "genability",
+    "green-button-alliance",
+    "gridx",
+    "gridx-ai",
+    "iec-cim",
+    "lunar-energy",
+    "measurabl",
+    "miso",
+    "n3rgy",
+    "nordpool",
+    "ontario-energy-board",
+    "openadr-alliance",
+    "origin-energy",
+    "ostrom",
+    "powershop",
+    "red-energy",
+    "reposit-power",
+    "simply-energy",
+    "teco-energy",
+    "viridi-parente",
+    "voltair",
+    "wattwatchers",
+    "xylem"
+   ],
+   "snake_case": [
+    "aedifion",
+    "aemo",
+    "aeso",
+    "arcadia",
+    "brick",
+    "chargefox",
+    "doe",
+    "edf-energy",
+    "electricity-north-west",
+    "elhub",
+    "eliq",
+    "endeavour-energy",
+    "energy-charts-api",
+    "enphase",
+    "ev-energy",
+    "green-button-alliance",
+    "gridstatus",
+    "gridx-ai",
+    "hydro-quebec",
+    "leap",
+    "leapfrog-power",
+    "modo-energy",
+    "national-energy-system-operator",
+    "near-space-labs",
+    "neso",
+    "nomos",
+    "northern-powergrid",
+    "octopus-energy",
+    "origin-energy",
+    "reposit-power",
+    "scottishpower",
+    "sense",
+    "ssen",
+    "thermal-power",
+    "ubicquia",
+    "uk-power-networks",
+    "university-of-sheffield",
+    "utilityapi",
+    "verdigris-technologies",
+    "wegowise"
+   ],
+   "kebab-case": [
+    "aemo",
+    "aer",
+    "agl-energy",
+    "alectra-utilities",
+    "alinta-energy",
+    "cdr-energy",
+    "con-edison",
+    "energy-queensland",
+    "energyaustralia",
+    "green-button-alliance",
+    "gridx-ai",
+    "hydro-ottawa",
+    "n3rgy",
+    "origin-energy",
+    "pge",
+    "powershop",
+    "red-energy",
+    "simply-energy",
+    "spp",
+    "toronto-hydro"
+   ],
+   "other": [
+    "aemo",
+    "aeso",
+    "elhub",
+    "entso-e",
+    "ev-energy",
+    "genability",
+    "nomos",
+    "thermal-power",
+    "voltair",
+    "wattwatchers"
+   ],
+   "PascalCase": [
+    "aemo",
+    "eliq",
+    "ercot",
+    "ontario-energy-board"
+   ]
+  },
+  "pagination_param": {
+   "page": [
+    "1komma5",
+    "aedifion",
+    "aemo",
+    "aer",
+    "agl-energy",
+    "alinta-energy",
+    "arcadia-power",
+    "cdr-energy",
+    "chargefox",
+    "clevergy",
+    "edf-energy",
+    "energy-queensland",
+    "energy-utilities",
+    "energyaustralia",
+    "enphase",
+    "ercot",
+    "ev-energy",
+    "green-button-alliance",
+    "gridstatus",
+    "gridx-ai",
+    "measurabl",
+    "miso",
+    "near-space-labs",
+    "octopus-energy",
+    "origin-energy",
+    "powershop",
+    "red-energy",
+    "simply-energy",
+    "teco-energy",
+    "ubicquia",
+    "viridi-parente",
+    "xylem"
+   ],
+   "limit": [
+    "1komma5",
+    "arcadia",
+    "clevergy",
+    "electricity-north-west",
+    "elhub",
+    "eliq",
+    "endeavour-energy",
+    "energy-utilities",
+    "enphase",
+    "ev-energy",
+    "gridstatus",
+    "gridx-ai",
+    "hydro-quebec",
+    "iec-cim",
+    "modo-energy",
+    "national-energy-system-operator",
+    "neso",
+    "nomos",
+    "northern-powergrid",
+    "openadr-alliance",
+    "reposit-power",
+    "scottishpower",
+    "ssen",
+    "teco-energy",
+    "uk-power-networks",
+    "utilityapi",
+    "verdigris-technologies",
+    "viridi-parente",
+    "voltair"
+   ],
+   "page_size": [
+    "aemo",
+    "aer",
+    "agl-energy",
+    "alinta-energy",
+    "cdr-energy",
+    "edf-energy",
+    "elhub",
+    "energy-queensland",
+    "energyaustralia",
+    "enphase",
+    "ev-energy",
+    "gridstatus",
+    "leap",
+    "leapfrog-power",
+    "measurabl",
+    "near-space-labs",
+    "octopus-energy",
+    "ontario-energy-board",
+    "origin-energy",
+    "powershop",
+    "red-energy",
+    "simply-energy",
+    "teco-energy",
+    "viridi-parente"
+   ],
+   "offset": [
+    "doe",
+    "eia",
+    "electricity-north-west",
+    "elhub",
+    "endeavour-energy",
+    "enphase",
+    "entso-e",
+    "gridx-ai",
+    "hildebrand",
+    "hydro-quebec",
+    "iec-cim",
+    "modo-energy",
+    "national-energy-system-operator",
+    "neso",
+    "northern-powergrid",
+    "reposit-power",
+    "scottishpower",
+    "ssen",
+    "thermal-power",
+    "uk-power-networks"
+   ],
+   "start": [
+    "aedifion",
+    "awattar",
+    "doe",
+    "eia",
+    "energy-charts-api",
+    "energy-utilities",
+    "ev-energy",
+    "gridx",
+    "gridx-ai",
+    "lunar-energy",
+    "n3rgy",
+    "nomos",
+    "ontario-energy-board",
+    "reposit-power",
+    "sense",
+    "thermal-power",
+    "university-of-sheffield",
+    "utilityapi",
+    "virtual-peaker"
+   ],
+   "size": [
+    "arcadia-power",
+    "clevergy",
+    "enphase",
+    "ercot",
+    "green-button-alliance",
+    "measurabl",
+    "miso",
+    "xylem"
+   ],
+   "max_results": [
+    "aemo",
+    "alectra-utilities",
+    "green-button-alliance",
+    "hydro-ottawa",
+    "n3rgy",
+    "pge",
+    "toronto-hydro"
+   ],
+   "cursor": [
+    "clevergy",
+    "eliq",
+    "gridstatus",
+    "nomos",
+    "voltair"
+   ],
+   "per_page": [
+    "aedifion",
+    "gridx-ai",
+    "ubicquia"
+   ],
+   "next": [
+    "amber-electric",
+    "enphase",
+    "utilityapi"
+   ],
+   "before": [
+    "elexon",
+    "voltair"
+   ],
+   "page_token": [
+    "leap",
+    "leapfrog-power"
+   ],
+   "count": [
+    "elexon"
+   ],
+   "skip": [
+    "openadr-alliance"
+   ],
+   "after": [
+    "voltair"
+   ]
+  },
+  "property": {
+   "lower": [
+    "aemo",
+    "aer",
+    "agl-energy",
+    "alinta-energy",
+    "amber-electric",
+    "arcadia",
+    "arcadia-power",
+    "bayou-energy",
+    "cdr-energy",
+    "chargefox",
+    "edf-energy",
+    "eliq",
+    "energy-queensland",
+    "energy-utilities",
+    "energyaustralia",
+    "enphase",
+    "gridstatus",
+    "gridx-ai",
+    "hildebrand",
+    "iec-cim",
+    "leap",
+    "leapfrog-power",
+    "measurabl",
+    "nomos",
+    "octopus-energy",
+    "origin-energy",
+    "powershop",
+    "red-energy",
+    "sense",
+    "simply-energy",
+    "teco-energy",
+    "utilityapi",
+    "viridi-parente",
+    "wegowise"
+   ],
+   "camelCase": [
+    "aemo",
+    "aer",
+    "agl-energy",
+    "alinta-energy",
+    "amber-electric",
+    "arcadia-power",
+    "cdr-energy",
+    "energy-queensland",
+    "energyaustralia",
+    "gridx-ai",
+    "hildebrand",
+    "iec-cim",
+    "measurabl",
+    "origin-energy",
+    "powershop",
+    "red-energy",
+    "simply-energy",
+    "teco-energy",
+    "viridi-parente"
+   ],
+   "snake_case": [
+    "arcadia",
+    "bayou-energy",
+    "chargefox",
+    "edf-energy",
+    "eliq",
+    "enphase",
+    "ev-energy",
+    "leap",
+    "leapfrog-power",
+    "octopus-energy",
+    "origin-energy",
+    "utilityapi",
+    "wegowise"
+   ]
+  }
+ }
+}

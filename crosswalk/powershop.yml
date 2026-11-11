@@ -1,0 +1,46 @@
+provider: powershop
+apis_io: https://apis.io/providers/powershop/
+context: energy
+generated: '2026-11-11'
+concepts:
+  meter:
+    path_segment:
+    - servicepoints
+    properties:
+      id: servicePointId
+      address: location
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aemo-cdr-openapi.yml#GET /electricity/servicepoints/{servicePointId}
+    - openapi/_original/aemo-cdr-openapi.yml#POST /electricity/servicepoints
+    - openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints
+    - openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}
+    - openapi/_original/cdr-energy-api-openapi.json#GET /energy/electricity/servicepoints
+    shared_spec: au-cdr-energy
+  meter_reading:
+    path_segment:
+    - usage
+    properties:
+      unit: unitOfMeasure
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/aemo-cdr-openapi.yml#GET /electricity/servicepoints/{servicePointId}/usage
+    - openapi/_original/aemo-cdr-openapi.yml#POST /electricity/servicepoints/usage
+    - openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/usage
+    - openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/electricity/servicepoints/{servicePointId}/usage
+    - openapi/_original/aemo-cds-energy-api-openapi.yml#POST /energy/electricity/servicepoints/usage
+    shared_spec: au-cdr-energy
+  utility_account:
+    path_segment:
+    - accounts
+    properties:
+      id: accountId
+      created_at: creationDate
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/accounts
+    - openapi/_original/aemo-cds-energy-api-openapi.yml#GET /energy/accounts/{accountId}
+    - openapi/_original/cdr-energy-api-openapi.json#GET /energy/accounts
+    - openapi/_original/cdr-energy-api-openapi.json#GET /energy/accounts/{accountId}
+    - openapi/_original/agl-energy-cds-energy-openapi.json#GET /energy/accounts
+    shared_spec: au-cdr-energy

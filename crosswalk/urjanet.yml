@@ -1,0 +1,20 @@
+provider: urjanet
+apis_io: https://apis.io/providers/urjanet/
+context: energy
+generated: '2026-11-11'
+concepts:
+  meter:
+    path_segment:
+    - meters
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/urjanet-openapi.yml#GET /utility/meters
+    - openapi/_original/urjanet-openapi.yml#PATCH /utility/meters/{meterId}
+  utility_account:
+    path_segment:
+    - accounts
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/urjanet-openapi.yml#GET /accounts

@@ -1,0 +1,20 @@
+provider: cms-energy
+apis_io: https://apis.io/providers/cms-energy/
+context: energy
+generated: '2026-11-11'
+concepts:
+  meter:
+    path_segment:
+    - meters
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cms-energy-openapi.yml#GET /meters
+    - openapi/_original/cms-energy-openapi.yml#GET /meters/{id}
+  meter_reading:
+    path_segment:
+    - intervals
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cms-energy-openapi.yml#GET /intervals

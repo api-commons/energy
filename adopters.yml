@@ -1,0 +1,171 @@
+context: energy
+generated: '2026-11-11'
+adopters:
+- provider: aemo
+  apis_io: https://apis.io/providers/aemo/
+  crosswalk: crosswalk/aemo.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: aer
+  apis_io: https://apis.io/providers/aer/
+  crosswalk: crosswalk/aer.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: agl-energy
+  apis_io: https://apis.io/providers/agl-energy/
+  crosswalk: crosswalk/agl-energy.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: alinta-energy
+  apis_io: https://apis.io/providers/alinta-energy/
+  crosswalk: crosswalk/alinta-energy.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: arcadia-power
+  apis_io: https://apis.io/providers/arcadia-power/
+  crosswalk: crosswalk/arcadia-power.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: cdr-energy
+  apis_io: https://apis.io/providers/cdr-energy/
+  crosswalk: crosswalk/cdr-energy.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: cms-energy
+  apis_io: https://apis.io/providers/cms-energy/
+  crosswalk: crosswalk/cms-energy.yml
+  concepts:
+  - meter
+  - meter_reading
+- provider: con-edison
+  apis_io: https://apis.io/providers/con-edison/
+  crosswalk: crosswalk/con-edison.yml
+  concepts:
+  - meter
+- provider: doe
+  apis_io: https://apis.io/providers/doe/
+  crosswalk: crosswalk/doe.yml
+  concepts:
+  - meter
+- provider: eia
+  apis_io: https://apis.io/providers/eia/
+  crosswalk: crosswalk/eia.yml
+  concepts:
+  - meter
+- provider: eliq
+  apis_io: https://apis.io/providers/eliq/
+  crosswalk: crosswalk/eliq.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: energy-queensland
+  apis_io: https://apis.io/providers/energy-queensland/
+  crosswalk: crosswalk/energy-queensland.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: energy-utilities
+  apis_io: https://apis.io/providers/energy-utilities/
+  crosswalk: crosswalk/energy-utilities.yml
+  concepts:
+  - meter
+  - meter_reading
+- provider: energyaustralia
+  apis_io: https://apis.io/providers/energyaustralia/
+  crosswalk: crosswalk/energyaustralia.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: enphase
+  apis_io: https://apis.io/providers/enphase/
+  crosswalk: crosswalk/enphase.yml
+  concepts:
+  - meter
+- provider: gridx-ai
+  apis_io: https://apis.io/providers/gridx-ai/
+  crosswalk: crosswalk/gridx-ai.yml
+  concepts:
+  - meter
+  - utility_account
+- provider: iec-cim
+  apis_io: https://apis.io/providers/iec-cim/
+  crosswalk: crosswalk/iec-cim.yml
+  concepts:
+  - meter
+  - meter_reading
+- provider: leap
+  apis_io: https://apis.io/providers/leap/
+  crosswalk: crosswalk/leap.yml
+  concepts:
+  - meter
+- provider: leapfrog-power
+  apis_io: https://apis.io/providers/leapfrog-power/
+  crosswalk: crosswalk/leapfrog-power.yml
+  concepts:
+  - meter
+- provider: measurabl
+  apis_io: https://apis.io/providers/measurabl/
+  crosswalk: crosswalk/measurabl.yml
+  concepts:
+  - meter
+  - meter_reading
+- provider: origin-energy
+  apis_io: https://apis.io/providers/origin-energy/
+  crosswalk: crosswalk/origin-energy.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: powershop
+  apis_io: https://apis.io/providers/powershop/
+  crosswalk: crosswalk/powershop.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: red-energy
+  apis_io: https://apis.io/providers/red-energy/
+  crosswalk: crosswalk/red-energy.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: simply-energy
+  apis_io: https://apis.io/providers/simply-energy/
+  crosswalk: crosswalk/simply-energy.yml
+  concepts:
+  - meter
+  - meter_reading
+  - utility_account
+- provider: urjanet
+  apis_io: https://apis.io/providers/urjanet/
+  crosswalk: crosswalk/urjanet.yml
+  concepts:
+  - meter
+  - utility_account
+- provider: utilityapi
+  apis_io: https://apis.io/providers/utilityapi/
+  crosswalk: crosswalk/utilityapi.yml
+  concepts:
+  - meter
+  - meter_reading
+- provider: wegowise
+  apis_io: https://apis.io/providers/wegowise/
+  crosswalk: crosswalk/wegowise.yml
+  concepts:
+  - meter

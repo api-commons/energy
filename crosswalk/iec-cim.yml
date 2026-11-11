@@ -1,0 +1,23 @@
+provider: iec-cim
+apis_io: https://apis.io/providers/iec-cim/
+context: energy
+generated: '2026-11-11'
+concepts:
+  meter:
+    path_segment:
+    - meters
+    properties:
+      meter_type: meterType
+      number: serialNumber
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/iec-cim-61968-distribution-openapi.yml#GET /meters
+  meter_reading:
+    path_segment:
+    - readings
+    properties:
+      unit: unit
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/iec-cim-61968-distribution-openapi.yml#GET /meters/{mRID}/readings

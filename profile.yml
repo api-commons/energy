@@ -1,0 +1,405 @@
+context: energy
+name: Energy and Utilities
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Utilities
+  - Electricity
+  - Smart Metering
+  - Utility Data
+  - Energy Data
+  - Energy Management
+  - Green Button
+  - Electric Utilities
+  providers_with_harvested_openapi: 95
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates:
+  doe: eia
+  leapfrog-power: leap
+  neso: national-energy-system-operator
+shared_specs:
+  au-cdr-energy:
+  - aemo
+  - aer
+  - agl-energy
+  - alinta-energy
+  - cdr-energy
+  - energy-queensland
+  - energyaustralia
+  - origin-energy
+  - powershop
+  - red-energy
+  - simply-energy
+concepts:
+  meter:
+    segments_seen:
+      meters: 14
+      meter: 2
+      servicepoints: 1
+    providers_exposing: 17
+    providers_with_readable_schema: 12
+    operations:
+    - operation: GET collection
+      providers: 16
+      share: 0.941
+      tier: core
+    - operation: GET item
+      providers: 11
+      share: 0.647
+      tier: core
+    - operation: POST collection
+      providers: 7
+      share: 0.412
+      tier: extended
+    - operation: UPDATE item
+      providers: 6
+      share: 0.353
+      tier: extended
+    - operation: DELETE item
+      providers: 3
+      share: 0.176
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.059
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.059
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 7
+      share: 0.583
+      type: string
+      spellings:
+      - id
+      - meter_id
+      - servicePointId
+      - meterId
+    - name: status
+      tier: extended
+      providers: 5
+      share: 0.417
+      type: string
+      spellings:
+      - status
+      - state
+    - name: created_at
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - created
+    - name: meter_type
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - meterType
+      - meter_type
+    - name: number
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - meterNumber
+      - serial_number
+      - serialNumber
+      - meter_number
+    - name: address
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: object
+      spellings:
+      - location
+      - serviceAddress
+      - service_address
+    - name: created_by
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: string
+      spellings:
+      - created_by
+      - createdBy
+    - name: name
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: string
+      spellings:
+      - name
+    - name: site
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: object
+      spellings:
+      - site
+    - name: status_detail
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: object
+      spellings:
+      - status_detail
+      - statusDetail
+    - name: type
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: string
+      spellings:
+      - type
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: string
+      spellings:
+      - updated_at
+      - modified
+    long_tail_count: 162
+    long_tail_sample:
+    - assets_count
+    - assets_created_count
+    - assets_failed_count
+    - assets_updated_count
+    - bill_customer_account_number
+    - bill_service_agreement_number
+    - caiso
+    - connection_references
+    - customer
+    - customer_classification
+    - customer_group
+    - customer_name
+    - customer_name_contains
+    - device
+    - electric_service_account_number
+    - end_at
+    - exclude_meter_programs
+    - file_name
+    - fuel
+    - historical_responsiveness
+    - include_meter_programs
+    - is_archived
+    - isone
+    - job_id
+    - load_serving_entity
+    - load_types
+    - metadata
+    - meter_id_contains
+    - missed_revenue
+    - model
+    - nomination_w
+    - number_of_events
+    - nyiso
+    - onboarding_token
+    - page_size
+    - page_token
+    - partner_reference
+    - partner_reference_contains
+    - program
+    - programs
+  meter_reading:
+    segments_seen:
+      intervals: 4
+      readings: 2
+      usage: 1
+      consumption: 1
+    providers_exposing: 8
+    providers_with_readable_schema: 6
+    operations:
+    - operation: GET collection
+      providers: 7
+      share: 0.875
+      tier: core
+    - operation: POST collection
+      providers: 3
+      share: 0.375
+      tier: extended
+    - operation: DELETE item
+      providers: 1
+      share: 0.125
+      tier: long-tail
+    - operation: GET item
+      providers: 1
+      share: 0.125
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.125
+      tier: long-tail
+    properties:
+    - name: end_at
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - endAt
+      - to
+      - end
+    - name: start_at
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - startAt
+      - from
+      - start
+    - name: unit
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - unit
+      - unitOfMeasure
+    long_tail_count: 48
+    long_tail_sample:
+    - id
+    - reading_type
+    - value
+    - avg_percent_full
+    - basic_read
+    - co2emission
+    - controlled_load
+    - cost
+    - created_at
+    - demand
+    - demand_charge
+    - download_method
+    - estimated_from
+    - export
+    - exported
+    - from_date
+    - fuel
+    - global_search
+    - import
+    - incineration_pct
+    - interval_format
+    - interval_read
+    - interval_time_zone
+    - is_ondemand
+    - landfill_pct
+    - m_rid
+    - metadata
+    - meter_mrid
+    - meter_uid
+    - multiplier
+    - price
+    - production
+    - read_end_date
+    - read_start_date
+    - read_u_type
+    - register_id
+    - register_suffix
+    - relationships
+    - resolution
+    - search
+  utility_account:
+    segments_seen:
+      accounts: 5
+      account: 1
+    providers_exposing: 5
+    providers_with_readable_schema: 4
+    operations:
+    - operation: GET collection
+      providers: 5
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 4
+      share: 0.8
+      tier: core
+    - operation: POST collection
+      providers: 3
+      share: 0.6
+      tier: core
+    - operation: UPDATE item
+      providers: 3
+      share: 0.6
+      tier: core
+    - operation: DELETE item
+      providers: 2
+      share: 0.4
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.2
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 4
+      share: 1.0
+      type: string
+      spellings:
+      - id
+      - accountId
+    - name: created_at
+      tier: core
+      providers: 3
+      share: 0.75
+      type: string
+      spellings:
+      - createdAt
+      - creationDate
+    long_tail_count: 60
+    long_tail_sample:
+    - account_number
+    - name
+    - billing_cycle
+    - business_unit_ids
+    - business_units
+    - correlation_id
+    - correlation_ids
+    - created_at_utc
+    - created_by
+    - custom_data
+    - customization
+    - display_name
+    - email
+    - first_extracted_at
+    - first_name
+    - groups
+    - is_accessible
+    - is_active
+    - is_customer_action_required
+    - is_history_fulfilled
+    - is_intervals_third_party_portal_account
+    - is_statements_product_active
+    - kind
+    - last_modified_at
+    - last_modified_by
+    - last_name
+    - last_successful_statement_extraction_at
+    - latest_new_statement_at
+    - latest_statement_date
+    - main_address
+    - middle_names
+    - next_expected_post_date
+    - nickname
+    - normalized_account_number
+    - open_status
+    - parent_id
+    - payload
+    - plan_overview
+    - prefix
+    - prepaid

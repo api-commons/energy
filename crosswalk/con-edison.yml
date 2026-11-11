@@ -1,0 +1,13 @@
+provider: con-edison
+apis_io: https://apis.io/providers/con-edison/
+context: energy
+generated: '2026-11-11'
+concepts:
+  meter:
+    path_segment:
+    - meter
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/con-edison-green-button-connect-my-data-swagger.json#GET /resource/Customer/{subscriptionId}/CustomerAccount/{accountId}/CustomerAgreement/{customerAgreementId}/ServiceLocation/{serviceLocationId}/Meter
+    - openapi/_original/con-edison-green-button-connect-my-data-swagger.json#GET /resource/Customer/{subscriptionId}/CustomerAccount/{accountId}/CustomerAgreement/{customerAgreementId}/ServiceLocation/{serviceLocationId}/Meter/{serialNumber}

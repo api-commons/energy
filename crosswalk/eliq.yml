@@ -1,0 +1,41 @@
+provider: eliq
+apis_io: https://apis.io/providers/eliq/
+context: energy
+generated: '2026-11-11'
+concepts:
+  meter:
+    path_segment:
+    - meters
+    properties:
+      id: id
+      name: name
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/eliq-data-management-api-openapi.json#DELETE /meters/{id}
+    - openapi/_original/eliq-data-management-api-openapi.json#GET /locations/{id}/meters
+    - openapi/_original/eliq-data-management-api-openapi.json#GET /meters
+    - openapi/_original/eliq-data-management-api-openapi.json#GET /meters/{id}
+    - openapi/_original/eliq-data-management-api-openapi.json#PUT /meters/{id}
+  meter_reading:
+    path_segment:
+    - consumption
+    properties:
+      end_at: to
+      start_at: from
+      unit: unit
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/eliq-insights-api-openapi.yaml#GET /v3/locations/{locationId}/consumption
+    - openapi/_original/eliq-insights-api-openapi.yaml#GET /v3/locations/{locationId}/similarhomes/consumption
+  utility_account:
+    path_segment:
+    - accounts
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/eliq-data-management-api-openapi.json#DELETE /portfolio/accounts/{id}
+    - openapi/_original/eliq-data-management-api-openapi.json#GET /portfolio/accounts
+    - openapi/_original/eliq-data-management-api-openapi.json#GET /portfolio/accounts/{id}
+    - openapi/_original/eliq-data-management-api-openapi.json#PUT /portfolio/accounts/{id}
